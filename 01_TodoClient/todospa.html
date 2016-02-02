@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+	<h1>Busy Busy</h1> 
+    <main>
+        <ul id="busylist">
+        </ul>
+    </main>
+    
+    <aside>
+       <label for="taskbox">Enter Task</label>
+       <input type="text" id="taskbox" size=40 value="enter task here">
+       <select id="priority">
+           <option>High</option>
+           <option>Medium</option>
+           <option>Low</option>
+       </select>
+       <button onclick="addTask()">New</button>
+    </aside>
+    
+    <script src="todo.js" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+        // When the page is loaded restore all tasks
+        window.onload = restoreTasks;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background: #eeeeee;
+}
+
+main {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 200px;
+    background: #5886B7;
+}
+
+main ul {
+    list-style: none;
+    font-size: 16pt;
+}
+
+aside {
+    width: 66%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #5886B7;
+}
+
+.High {
+    color: blue;
+}
+
+.Medium {
+    color: yellow;
+}
+
+.Low {
+    color: lightgray;
+}
+
+.done {
+  text-decoration: line-through;
+}
