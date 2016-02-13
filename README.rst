@@ -37,8 +37,8 @@ The goals of this first unit are to understand a bit about Network programming, 
         
     * Readings
     
-        * http://www.bogotobogo.com/cplusplus/sockets_server_client.php
-        * http://www.bogotobogo.com/python/python_network_programming_server_client.php
+        * `Networking Basics <http://www.bogotobogo.com/cplusplus/sockets_server_client.php>`_
+        * `A Simple Client/Server <http://www.bogotobogo.com/python/python_network_programming_server_client.php>`_
 
 
 
@@ -50,6 +50,6 @@ The goals of this first unit are to understand a bit about Network programming, 
     
     * Readings
     
-        * http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
-        * http://www.tutorialspoint.com/http/index.htmP
-    
+        * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
+        * `Another Intro <http://www.tutorialspoint.com/http/index.htmP>`_
+        * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
