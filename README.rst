@@ -34,5 +34,22 @@ The goals of this first unit are to understand a bit about Network programming, 
         * See echoServerMT.py and echoServerMP.py
         * Demonstrate a simple python webserver
         * start to write our own webserver based on echoServerXX.py
+        
+    * Readings
+    
+        * http://www.bogotobogo.com/cplusplus/sockets_server_client.php
+        * http://www.bogotobogo.com/python/python_network_programming_server_client.php
+
+
 
 * Week of February 14
+
+    * Tuesday  - Chat server with asyncio
+    
+    * Thursday - A multithreaded web server
+    
+    * Readings
+    
+        * http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177
+        * http://www.tutorialspoint.com/http/index.htmP
+    
