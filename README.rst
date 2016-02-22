@@ -34,9 +34,9 @@ The goals of this first unit are to understand a bit about Network programming, 
         * See echoServerMT.py and echoServerMP.py
         * Demonstrate a simple python webserver
         * start to write our own webserver based on echoServerXX.py
-        
+
     * Readings
-    
+
         * `Networking Basics <http://www.bogotobogo.com/cplusplus/sockets_server_client.php>`_
         * `A Simple Client/Server <http://www.bogotobogo.com/python/python_network_programming_server_client.php>`_
 
@@ -45,11 +45,27 @@ The goals of this first unit are to understand a bit about Network programming, 
 * Week of February 14
 
     * Tuesday  - Chat server with asyncio
-    
+
     * Thursday - A multithreaded web server
-    
+
     * Readings
-    
+
         * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
-        * `Another Intro <http://www.tutorialspoint.com/http/index.htmP>`_
+        * `Another Intro <http://www.tutorialspoint.com/http/index.htm>`_
         * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
+
+* Week of February 20
+
+    * Tuesday  -  Introduction to CGI Programming
+
+        * A Hello World Example
+        * Parameters and Interprocess communication
+        * Readings
+
+           * `Server Side Intro <http://interactivepython.org/runestone/static/webfundamentals/CGI/basiccgi.html>`_
+           * `User Input <http://interactivepython.org/runestone/static/webfundamentals/CGI/forms.html>`_
+
+    * Thursday - Extending our webserver to support CGI programming
+
+        * Forms and Form Processing
+        * The ooolld todo app as a server side program
