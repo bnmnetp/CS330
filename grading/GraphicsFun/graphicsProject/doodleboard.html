@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Etch-a-sketch</title>
+	<script type="text/javascript" src="simplegraphics.js"></script>
+	<link rel="stylesheet" type="text/css" href="doodleboard.css"/>
+</head>
+<body onkeydown="arrows(event)">
+	<div id="content">
+	<h1>Etch-a-sketch Extreme</h1>
+	<button onclick="drawit()">Draw Now</button><button onclick="clearit()" onclick="interval = window.clearInterval(interval)">Clear</button></br>
+	<canvas id="mycanvas" style="border:2px solid black" width="600" height="600"></canvas>
+	</div>
+	<div id="sidebar"></br></br></br>
+	<p>Use 'WASD' to control one racer, and the arrow keys to control the other</p>
+	</div>
+</body>
+</html>

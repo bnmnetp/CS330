@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Introducing Javascript Graphics</title>
+	<script type="text/javascript" src="simpleGraphics.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<p>Click in the canvas to spawn a ball to play with.  Clicking again in the canvas will move the ball to that location unless it would move the ball out of the box.</p>
+	<p>You can have the ball follow your mouse around the canvas as best as it can by checking the 'Enable Follow' checkbox</p>
+	<p>You can launch the ball by clicking and dragging and using the line to aim the ball, the longer the line, the more power the ball is launched with.  It will stop following your mouse when it is launched but it will follow again once it slows down.</p>
+	<p>The Draw Path checkbob will make the ball draw a line on the cnavas as it moves around.  Please note that this function is more intensive and may lower performance.  I reccommend the chrome browser if you find this function runs slowly.</p>
+	<p>You can click the clear button to clear any path draw with the Draw Path checkbox.</p>
+	<div id="container" style="position:relative; width:600px; height:600px">
+		<canvas id="mycanvas2" style="z-index: 1; position:absolute; left:0px; top:0px;" height="600px" width="600">
+		This text is displayed if your browser does not support HTML5 Canvas.
+		</canvas>
+		<canvas id="mycanvas" style="z-index: 1; position:absolute; left:0px; top:0px;" height="600px" width="600" onmousedown="myMouse(event)" onmousemove="follow(event)" onmouseover="over()" onmouseout="out()" onmouseup ="mouseup()">
+		This text is displayed if your browser does not support HTML5 Canvas.
+		</canvas>
+	</div>
+	<br>
+	<div id="controls">
+		<input type="checkbox" id="followCheck" value="Follow?" onclick="followToggle()"/>Enable Follow<br />
+		<input type="checkbox" id="pathCheck" value="Path?" onclick="drawPathToggle()"/>Draw Path<br />
+		<input type="button" id="clearPath" value="clear" onclick="clearPath()"/>Clear Path<br />
+	</div>
+</body>
+</html>

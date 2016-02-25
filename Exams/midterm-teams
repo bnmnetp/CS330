@@ -1,0 +1,22 @@
+import random
+
+teams = [
+'Zach Aschim',
+'Isaac, Aaron',
+'Erik, Collin',
+'Scott',
+'Zach Hruska',
+'Noah Lange',
+'Minh',
+'Jake, Sarah',
+'Matt',
+'Erik, Tim',
+'Louis',
+'Joel',
+'Sam',
+'Teddy',
+'Jacqui'
+]
+
+random.shuffle(teams)
+print teams
