@@ -64,6 +64,7 @@ The goals of this first unit are to understand a bit about Network programming, 
 
            * `Server Side Intro <http://interactivepython.org/runestone/static/webfundamentals/CGI/basiccgi.html>`_
            * `User Input <http://interactivepython.org/runestone/static/webfundamentals/CGI/forms.html>`_
+           * `W3Schools Forms <http://www.w3schools.com/html/html_forms.asp>`_
 
     * Thursday - Extending our webserver to support CGI programming
 
