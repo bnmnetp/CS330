@@ -1,0 +1,53 @@
+body {
+	background-color: #FFFFFF;
+	color: #330033;
+	font-family: Verdana, serif;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 40px;
+	font-family: serif;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+p, ul, ol {
+	width: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+ol {
+	background-color: #ffcc99;
+}
+
+ul {
+	background-color: #ccffcc;
+}
+
+li {
+	font-style: italic;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #33ff33;
+}
+
+li.p1 {
+	color: red;
+	font-style: normal;
+}
+
+ul li:nth-child(2n+1) {
+	background-color: white;
+}

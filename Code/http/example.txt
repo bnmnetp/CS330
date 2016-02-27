@@ -1,0 +1,47 @@
+GET /~bmiller/hello.html HTTP/1.1\r\n
+
+GET /~bmiller/hello.html HTTP/1.1
+GET /~bmiller/hello.html HTTP/1.1
+Host: knuth.luther.edu
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_2; en-US) AppleWebKit/532.9 (KHTML, like Gecko) Chrome/5.0.307.11 Safari/532.9
+Cache-Control: max-age=0
+Accept: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Encoding: gzip,deflate,sdch
+Cookie: __utmz=98063234.1266855587.11.2.utmcsr=facebook.com|utmccn=(referral)|utmcmd=referral|utmcct=/permalink.php; __utma=98063234.846384859.1265132449.1266519957.1266855587.11; __utmz=105540057.1267560337.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __utma=105540057.1402114555.1267560337.1267560337.1267560337.1
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+If-None-Match: "2f60a0a-1f4-4b285440"
+If-Modified-Since: Tue, 09 Feb 2010 17:31:53 GMT
+
+HTTP/1.1 200 OK
+Date: Mon, 08 Mar 2010 01:19:44 GMT
+Server: Apache/2.2.3 (CentOS)
+Last-Modified: Mon, 08 Mar 2010 01:19:31 GMT
+ETag: "2f60a0a-1f4-db6b2ec0"
+Accept-Ranges: bytes
+Content-Length: 500
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<link type="text/css" rel="stylesheet" href="test.css">
+<body>
+<h1 class="c1">Hello Class</h1>
+<p>This is a paragraph of text that is long and boring so the words will wrap
+sometime.  Not long enough yet, ok add some more and more and more and more.   This is why web designers invented greeking:  lorem ipsum etc.</p>
+
+<a href="http://knuth.luther.edu">CS Home</a>
+
+<div id="d1">
+<h1 class="c2">List Stuff</h1>
+
+<ul>
+<li>List entry 1</li>
+<li>List entry 2</li>
+</ul>
+</div>
+
+</body>
+
+</html>
