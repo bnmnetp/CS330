@@ -1,0 +1,33 @@
+body {
+	background-color:#000000;
+	color:#F94D00;}
+
+a { 
+	color: #F94D00; }
+a:hover {
+	color: yellow; }
+
+aside {
+	color:#F94D00;
+	float: right;
+	width: 14%;
+	background: #001111;
+	padding: 1%;
+	border: 2px dotted #F94D00;
+	border-radius: 5px;
+	text-align: center;
+	margin: 5px 0px;}
+
+header {
+	color: white;
+	text-align: center;
+	width: 100%}
+
+section {
+	float: left;
+	width: 80%;
+	background: #001111;
+	padding: 1%;
+	border: 2px dotted #F94D00;
+	border-radius: 5px;
+	margin: 5px 0px;}

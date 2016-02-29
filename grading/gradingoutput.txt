@@ -1,0 +1,410 @@
+taking too long, skipping rest of tests
+-----------------------
+start: oil end: owl for: andejo18
+found it
+oil
+
+owl
+
+start: oil end: own for: andejo18
+found it
+oil
+
+owl
+
+own
+
+start: oil end: gas for: andejo18
+found it
+oil
+
+gil
+
+gal
+
+gas
+
+start: pail end: pain for: andejo18
+found it
+pail
+
+pain
+
+start: bread end: break for: andejo18
+found it
+bread
+
+break
+
+start: pail end: pale for: andejo18
+found it
+pail
+
+pall
+
+pale
+
+start: bread end: brand for: andejo18
+found it
+bread
+
+breed
+
+bleed
+
+blend
+
+bland
+
+brand
+
+start: zany end: pope for: andejo18
+found it
+zany
+
+cany
+
+cony
+
+pony
+
+pone
+
+pope
+
+start: bread end: brake for: andejo18
+found it
+bread
+
+break
+
+breck
+
+brack
+
+brace
+
+brake
+
+start: bread end: toast for: andejo18
+found it
+bread
+
+break
+
+bleak
+
+bleat
+
+blest
+
+blast
+
+boast
+
+toast
+
+-----------------------
+taking too long, skipping rest of tests
+-----------------------
+start: oil end: owl for: smitau01
+found it
+Word Ladder
+oil
+owl
+start: oil end: own for: smitau01
+found it
+Word Ladder
+oil
+sil
+sip
+gip
+gim
+tim
+tam
+tao
+two
+twa
+hwa
+hia
+pia
+pit
+cit
+cid
+bid
+bud
+bub
+cub
+cum
+rum
+rut
+jut
+jur
+tur
+tun
+ton
+eon
+ean
+nan
+nay
+say
+soy
+sot
+lot
+lou
+you
+yox
+fox
+fop
+mop
+mod
+vod
+vog
+nog
+nig
+nix
+rix
+rex
+rep
+hep
+hei
+hsi
+ssi
+ski
+oki
+obi
+ubi
+uri
+urs
+ers
+ess
+ass
+ash
+ach
+ich
+icy
+ivy
+iva
+ida
+ide
+ade
+age
+agy
+amy
+amt
+aht
+ahu
+khu
+kha
+wha
+who
+oho
+ohm
+olm
+ole
+owe
+own
+start: oil end: gas for: smitau01
+found it
+Word Ladder
+oil
+sil
+sip
+gip
+gim
+tim
+tam
+tao
+two
+twa
+hwa
+hia
+pia
+pit
+cit
+cid
+bid
+bud
+bub
+cub
+cum
+rum
+rut
+jut
+jur
+tur
+tun
+ton
+eon
+ean
+nan
+nay
+say
+soy
+sot
+lot
+lou
+you
+yox
+fox
+fop
+mop
+mod
+vod
+vog
+nog
+nig
+nix
+rix
+rex
+rep
+hep
+hei
+hsi
+ssi
+ski
+oki
+obi
+ubi
+uri
+urs
+ers
+ess
+ass
+ash
+ach
+ich
+icy
+ivy
+iva
+ida
+ide
+ade
+age
+agy
+amy
+amt
+aht
+ahu
+khu
+kha
+wha
+who
+oho
+ohm
+olm
+ole
+owe
+owk
+oak
+oat
+vat
+vas
+gas
+start: pail end: pain for: smitau01
+no table here
+taking too long, skipping rest of tests
+-----------------------
+start: oil end: owl for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.001 seconds
+oil
+owl
+start: oil end: own for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.005 seconds
+oil
+owl
+own
+start: oil end: gas for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.026 seconds
+oil
+gil
+gal
+gas
+start: pail end: pain for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.002 seconds
+pail
+pain
+start: bread end: break for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.004 seconds
+bread
+break
+start: pail end: pale for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.025 seconds
+pail
+pall
+pale
+start: bread end: brand for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.443 seconds
+bread
+break
+breck
+brack
+brank
+brand
+start: zany end: pope for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.901 seconds
+zany
+wany
+wane
+pane
+pone
+pope
+start: bread end: brake for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 0.433 seconds
+bread
+break
+breck
+brack
+brace
+brake
+start: bread end: toast for: nowoja01
+no table here
+If you are unfamiliar with what a word ladder is, let me explain it to you. First, pick a word
+to start on and a word to end with. (These must be the same length!) Then the program will
+find how to transform the start word into the end word, one letter at a time.
+Result found in: 2.269 seconds
+bread
+break
+bleak
+bleat
+blest
+blast
+boast
+toast
+-----------------------
