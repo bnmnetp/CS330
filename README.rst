@@ -82,4 +82,5 @@ The goals of this first unit are to understand a bit about Network programming, 
 
     * Readings
 
-        * [SQLAlchemy Tutorial](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
+        * `SQLAlchemy Tutorial <http://docs.sqlalchemy.org/en/latest/orm/tutorial.html>`_
+        * `SQLITE3 Tutorial <https://docs.python.org/2/library/sqlite3.html>`_
