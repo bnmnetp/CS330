@@ -1,0 +1,30 @@
+﻿<html lang="fr">
+<head>
+    <link href="graphics.css" rel="stylesheet">
+     
+</head>
+<body>
+    <div class="grid">
+        <header>
+            <h1>
+                Simple Brick Game</h1> <br />
+                <h4> Click on New Game to Start the Game....</h4>
+            <ul>
+                <li><a id="newGame" onclick = "startGame()">New game</a></li>
+            </ul>
+        </header>
+            <canvas id="backgroundCanvas">
+            </canvas>
+            <svg id="svgRoot">
+                <circle cx="100" cy="100" r="10" id="ball" />
+                <rect id="pad" height="15px" width="150px" x="200" y="200" rx="10" ry="20"/>
+            </svg>
+            <div id="stats">
+            </div>
+            <footer>
+            <div id="message"></div>
+            </footer>
+        </div>
+   <script type="text/javascript" src="graphics.js"></script>
+</body>
+</html>

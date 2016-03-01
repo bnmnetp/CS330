@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<script type="text/javascript" src="wordlists.js"></script>
+<script type="text/javascript">
+<!--    
+
+	function Set() {
+		var set = new Array();
+		
+		this.add = function(entry) {set.push(entry);}
+		
+		this.contains = function(entry) {
+			if (set.indexOf(entry) == -1) {
+				return false
+			} 	
+			return true
+		}
+		
+		this.get = function() {return set;}
+		
+	}
+	
+	
+	function Queue() {
+		
+		var queue = [];
+
+		this.add = function(element) {
+			queue.push(element);
+			return this;
+		};
+	
+		this.get = function(element) {
+			return queue.shift();
+		};
+	
+		this.remove = function() {
+			queue.shift();
+			return this;
+		};
+	
+		this.size = function() {
+			return queue.length;
+		};
+	
+		this.isEmpty = function() {
+			return (queue.length == 0);
+		};
+	
+		this.getQueue = function() {
+			return queue;
+		};
+	};
+	
+	usedWords = new Set();
+	stackQueue = new Queue();
+	originalStack = new Array();
+	resultFound = false;
+
+	function ThreeSolver(wOne,wTwo,originalStack) {
+		var form;
+		form = document.getElementById("ladder");
+		
+		usedWords.add(wOne);
+		originalStack.push(wOne);
+		
+		charOne = wOne.charAt(0);
+		charTwo = wOne.charAt(1);
+		charThree = wOne.charAt(2);
+		
+		expOne = new RegExp(charOne+charTwo+'.');
+		expTwo = new RegExp('.'+charTwo+charThree);
+		expThree = new RegExp(charOne+'.'+charThree);
+		
+		for (word in threeLetterWords) {
+			word = threeLetterWords[word];
+			if (!(usedWords.contains(word))) {
+				if (expOne.test(word) || expTwo.test(word) || expThree.test(word)) {
+					stack = originalStack.slice(0);
+					stack.push(word);
+					stackQueue.add(stack);
+					usedWords.add(word);
+				}
+			}
+		}
+		
+		for (i=0; i<stackQueue.size()+1; i++) {
+			stack = stackQueue.get();
+			word = stack.pop();
+			if (word == wTwo) {
+				stack.push(word);
+				result = stack;
+				resultFound = true;
+			}
+			if (resultFound != true) {
+				//alert("ThisWord: " + word + " StackQueue: " + stackQueue.getQueue() + " OriginalStack: " + originalStack + " CurrentStack: " + stack + " UsedWords: " + usedWords.get());
+				ThreeSolver(word,wTwo,originalStack);
+			}
+		}
+		return result;
+	}
+	
+	
+	function FourSolver(wOne,wTwo,originalStack) {
+		var form;
+		form = document.getElementById("ladder");
+		
+		usedWords.add(wOne);
+		originalStack.push(wOne);
+		
+		charOne = wOne.charAt(0);
+		charTwo = wOne.charAt(1);
+		charThree = wOne.charAt(2);
+		charFour = wOne.charAt(3);
+		
+		expOne = new RegExp(charOne+charTwo+charThree+'.');
+		expTwo = new RegExp('.'+charTwo+charThree+charFour);
+		expThree = new RegExp(charOne+'.'+charThree+charFour);
+		expFour = new RegExp(charOne+charTwo+'.'+charFour);
+		
+		for (word in fourLetterWords) {
+			word = fourLetterWords[word];
+			if (!(usedWords.contains(word))) {
+				if (expOne.test(word) || expTwo.test(word) || expThree.test(word) || expFour.test(word)) {
+					stack = originalStack.slice(0);
+					stack.push(word);
+					stackQueue.add(stack);
+					usedWords.add(word);
+				}
+			}
+		}
+		
+		for (i=0; i<stackQueue.size()+1; i++) {
+			stack = stackQueue.get();
+			word = stack.pop();
+			if (word == wTwo) {
+				stack.push(word);
+				result = stack;
+				resultFound = true;
+			}
+			if (resultFound != true) {
+				//alert("ThisWord: " + word + " StackQueue: " + stackQueue.getQueue() + " OriginalStack: " + originalStack + " CurrentStack: " + stack + " UsedWords: " + usedWords.get());
+				FourSolver(word,wTwo,originalStack);
+			}
+		}
+		return result;
+	}
+	
+	function FiveSolver(wOne,wTwo,originalStack) {
+		var form;
+		form = document.getElementById("ladder");
+		
+		usedWords.add(wOne);
+		originalStack.push(wOne);
+		
+		charOne = wOne.charAt(0);
+		charTwo = wOne.charAt(1);
+		charThree = wOne.charAt(2);
+		charFour = wOne.charAt(3);
+		charFive = wOne.charAt(4);
+		
+		expOne = new RegExp(charOne+charTwo+charThree+'.');
+		expTwo = new RegExp('.'+charTwo+charThree+charFour);
+		expThree = new RegExp(charOne+'.'+charThree+charFour);
+		expFour = new RegExp(charOne+charTwo+'.'+charFour);
+		expFive = new RegExp(charOne+charTwo+charThree+charFour+'.');
+		
+		for (word in fiveLetterWords) {
+			word = fiveLetterWords[word];
+			if (!(usedWords.contains(word))) {
+				if (expOne.test(word) || expTwo.test(word) || expThree.test(word) || expFour.test(word) || expFive.test(word)) {
+					stack = originalStack.slice(0);
+					stack.push(word);
+					stackQueue.add(stack);
+					usedWords.add(word);
+				}
+			}
+		}
+		
+		for (i=0; i<stackQueue.size()+1; i++) {
+			stack = stackQueue.get();
+			word = stack.pop();
+			if (word == wTwo) {
+				stack.push(word);
+				result = stack;
+				resultFound = true;
+			}
+			if (resultFound != true) {
+				//alert("ThisWord: " + word + " StackQueue: " + stackQueue.getQueue() + " OriginalStack: " + originalStack + " CurrentStack: " + stack + " UsedWords: " + usedWords.get());
+				FiveSolver(word,wTwo,originalStack);
+			}
+		}
+		return result;
+	}
+	
+	function ResetForm() {
+		var form;
+		form = document.getElementById("ladder");
+		
+		document.getElementById("wordOneError").innerHTML="";
+		document.getElementById("wordTwoError").innerHTML="";
+		document.getElementById("currentStack").innerHTML="";
+
+		usedWords = new Set();
+		stackQueue = new Queue();
+		originalStack = new Array();
+		resultFound = false;
+		
+		form.reset();
+	}
+	
+	function SubmitForm() {
+		var form,areerrors;
+		areerrors = false;
+		form = document.getElementById("ladder");
+		
+		document.getElementById("wordOneError").innerHTML="";
+		document.getElementById("wordTwoError").innerHTML="";
+		
+		wOne = form.wordOne.value.toLowerCase();
+		wTwo = form.wordTwo.value.toLowerCase();
+		
+		if (wOne == "") {
+			document.getElementById("wordOneError").innerHTML="Please enter the first word.";
+			areerrors = true;
+		}
+		
+		if (wTwo == "") {
+			document.getElementById("wordTwoError").innerHTML="Please enter the second word.";
+			areerrors = true;
+		}
+
+		if (areerrors) return
+		
+		else {
+			tempLength = wOne.length;
+			myExp = new RegExp("[^a-z]");
+			if (myExp.test(wOne) || myExp.test(wTwo)) {
+				document.getElementById("wordOneError").innerHTML="Please only enter alphabetical characters.";
+				areerrors = true;
+			}
+			if (wOne.length != wTwo.length) {
+				document.getElementById("wordOneError").innerHTML="Please make sure word lengths match.";
+				areerrors = true;
+			}
+			
+			if (areerrors) return
+		}
+			
+		document.getElementById("wordOneError").innerHTML="";
+		document.getElementById("wordTwoError").innerHTML="";
+		
+		if (wOne.length == 3) {result = ThreeSolver(wOne,wTwo,originalStack);};
+		if (wOne.length == 4) {result = FourSolver(wOne,wTwo,originalStack);};
+		if (wOne.length == 5) {result = FiveSolver(wOne,wTwo,originalStack);};
+		
+		result = result.toString();
+		result = result.replace(/,/g,", ");
+		document.getElementById("currentStack").innerHTML=result;
+	}
+-->
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ladder</title>
+</head>
+
+<body>
+  <div class="center_box">
+        <form id="ladder" method="post" action="findLadder();">
+            <table>
+                <tr>
+                    <td>First Word:</td>
+                    <td><input type="text" name="wordOne" /></td>
+                    <td><span id="wordOneError" class="error"></span></td>
+                </tr>
+                <tr>
+                    <td>Second Word:</td>
+                    <td><input type="text" name="wordTwo" /></td>
+                    <td><span id="wordTwoError" class="error"></span></td>
+                    <td><span id="results" class="error"></span></td>
+        
+                </tr>
+                <tr>
+                    <td colspan=2 align="center">
+                    <input type="button" value="Reset" onClick="ResetForm();"/>
+                    <input type="button" value="Submit" onClick="SubmitForm();" />
+                    </td>
+                </tr>
+            </table>
+            </br></br></br>
+            <table>
+                <tr>
+                	<td>CurrentStack:</td>
+                </tr>
+                <tr>
+                    <td><ol><span id="currentStack" class="error"></span></li></ol></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

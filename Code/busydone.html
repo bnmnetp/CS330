@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="book.css">
+	<script type="text/javascript" src="classdemo.js"></script>
+</head>
+
+<body>
+	<h1>Being Busy</h1> 
+	<p>It's not easy being busy! But that doesn't mean it can't be fun.</p> 
+<form name="todoform" onsubmit="return checkForm()">	
+	<h2 >Important Things To Do</h2> 
+	<ol id="ittd"> 
+	 <li> <input type="checkbox" name="complete" value="1" /><a href="phys.html">Turn in</a> Physics HW!</li> 
+	 <li> <input type="checkbox" name="complete" value="2" />Do Reading for English</li> 
+	 <li> <input type="checkbox" name="complete" value="3" />Go To the Store for Groceries</li> 
+	 <li> <input type="checkbox" name="complete" value="4" />Pay Tuition</li> 
+	 <li> <input type="checkbox" name="complete" value="5" />Make sure program compiles...</li> 
+	</ol> 
+	<h2>Fun Things To Do</h2> 
+	<ul id="test"> 
+	 <li> <input type="checkbox" name="complete" value="6" onclick="alert(this.parentNode.style.textDecoration = 'line-through');"/>Sleep In</li> 
+	 <li id="7"> <input type="checkbox" name="complete" value="7" onclick="lineThrough('7')" />Out to Dinner with Friends</li> 
+	 <li> <input type="checkbox" name="complete" value="8" onclick="lineThroughSelf(this)" />Go Swimming</li> 
+	 <li> <input type="checkbox" name="complete" value="9" />Finish Painting</li> 
+	 <li> <input type="checkbox" name="complete" value="10" />Go to the Movies: <a href="movies.html">see what's playing</a></li> 
+	</ul>
+	<p>Enter a new Task: <input type="text" name="newtask" size="50"> </p>
+	<input type="submit" value="submit">
+</form>	
+</body>
+
+</html>
