@@ -70,3 +70,16 @@ The goals of this first unit are to understand a bit about Network programming, 
 
         * Forms and Form Processing
         * The ooolld todo app as a server side program
+
+* Week of February 29
+
+    * Tuesday - Database Access
+
+        * Using SqlAlchemy
+        * A server side Todo Program
+
+    * Thursday - No Class
+
+    * Readings
+
+        * [SQLAlchemy Tutorial](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
