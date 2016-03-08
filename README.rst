@@ -84,3 +84,16 @@ The goals of this first unit are to understand a bit about Network programming, 
 
         * `SQLAlchemy Tutorial <http://docs.sqlalchemy.org/en/latest/orm/tutorial.html>`_
         * `SQLITE3 Tutorial <https://docs.python.org/2/library/sqlite3.html>`_
+
+* Week of March 7
+
+    * Tuesday
+
+        * Finish up CGI TODO
+        * Using SQLAlchecmy
+
+    * Web 2.0 -- Services and Javascript
+
+        * AJAX / XMLHttpRequest Objects
+        * JSON
+        * A Hybrid TODO - Javasript on the Front end and Services on the back
