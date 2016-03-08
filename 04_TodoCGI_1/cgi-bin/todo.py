@@ -3,6 +3,20 @@
 import sqlite3
 import os
 
+
+# CREATE TABLE todo (
+# 	id INTEGER NOT NULL,
+# 	task VARCHAR,
+# 	priority VARCHAR,
+# 	due DATE,
+# 	done BOOLEAN,
+# 	PRIMARY KEY (id),
+# 	CHECK (done IN (0, 1))
+# );
+# From the folder above your cgi-bin folder you run:
+# python3.4 -m http.server --cgi 80000
+# your test.db file should be in the same folder as your cgi-bin folder.
+
 # Finish up our headers
 print("Content-Type: text/html")
 print("")
@@ -33,7 +47,10 @@ if os.environ["QUERY_STRING"]:
     if 'description' in myValues:
         cur.execute("select max(id) from todo")
         res = cur.fetchone()
-        myValues['id'] = res[0] + 1
+        try:
+            myValues['id'] = res[0] + 1
+        except:
+            myValues['id'] = 0
         insStatement = "insert into todo values (%(id)d, '%(description)s', '%(priority)s', '%(duedate)s', 0) "
         print(insStatement % myValues)
         cur.execute(insStatement % myValues)
