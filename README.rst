@@ -91,6 +91,9 @@ The goals of this first unit are to understand a bit about Network programming, 
 
         * Finish up CGI TODO
         * Using SQLAlchecmy
+    * Readings
+
+        * `Python Descriptors Demystified <http://nbviewer.jupyter.org/urls/gist.github.com/ChrisBeaumont/5758381/raw/descriptor_writeup.ipynb>`_
 
     * Web 2.0 -- Services and Javascript
 
