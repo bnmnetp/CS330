@@ -90,13 +90,23 @@ The goals of this first unit are to understand a bit about Network programming, 
     * Tuesday
 
         * Finish up CGI TODO
-        * Using SQLAlchecmy
+        * Using SQLAlchecmy -- a Better Database Interface
+        * Understanding the Descriptors used by SQLAlchemy and others
+
     * Readings
 
         * `Python Descriptors Demystified <http://nbviewer.jupyter.org/urls/gist.github.com/ChrisBeaumont/5758381/raw/descriptor_writeup.ipynb>`_
 
+* Week of March 14
+
     * Web 2.0 -- Services and Javascript
 
+        * Review the SQLAlchemy based todo app
+        * Designing a Web API
         * AJAX / XMLHttpRequest Objects
         * JSON
         * A Hybrid TODO - Javasript on the Front end and Services on the back
+
+    * Readings
+
+        * `Designing a RESTful API <http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>`_
