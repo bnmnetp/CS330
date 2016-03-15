@@ -110,3 +110,5 @@ The goals of this first unit are to understand a bit about Network programming, 
     * Readings
 
         * `Designing a RESTful API <http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>`_
+        * `XMLHttpRequest <http://www.w3schools.com/ajax/ajax_xmlhttprequest_create.asp>`_
+        
