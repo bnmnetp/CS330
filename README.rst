@@ -112,3 +112,15 @@ The goals of this first unit are to understand a bit about Network programming, 
         * `Designing a RESTful API <http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>`_
         * `XMLHttpRequest <http://www.w3schools.com/ajax/ajax_xmlhttprequest_create.asp>`_
         
+        
+* Week of March 28
+
+  * Midterm Mashups
+  
+  * Readings
+  
+    * I highly recommend you buy ``Flask Web Development by Miguel Grinberg <flaskbook.com>`_
+    * It is based on this series of posts: `The Flask Mega Tutorial <http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-now-with-python-3-support>`_  But it is expanded and well worth the $$.
+    
+    
+        
