@@ -1,12 +1,10 @@
 from flask import Flask, request, jsonify
-import sqlite3
 import os
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy import Column, Integer, String, Date, Boolean
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from datetime import date
-from dateutil.parser import parse
 from dateutil.parser import parse
 
 engine = create_engine('sqlite:///todo_database.db', echo=False)
@@ -18,8 +16,6 @@ app.debug = True
 Session = sessionmaker(bind=engine)
 Session.configure()
 session = Session()
-
-from collections import OrderedDict
 
 
 class Todo(Base):
