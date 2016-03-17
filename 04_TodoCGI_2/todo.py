@@ -33,6 +33,14 @@ session.commit()
 
 
 our_task = session.query(Todo).filter_by(done=False).first()
-print(our_task)
+print(our_task.task)
+
+# this is how we update!!
 our_task.done = True
 session.commit()
+
+# connection = engine.connect()
+# result = connection.execute("select username from users")
+# for row in result:
+#     print "username:", row['username']
+# connection.close()

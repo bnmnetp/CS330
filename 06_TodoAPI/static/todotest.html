@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo Test</title>
+</head>
+<body>
+<script type = "text/javascript">
+    function showtodos () {
+        console.log("hello")
+        obj = new XMLHttpRequest()
+        obj.open("GET","/todo",true)
+        obj.onreadystatechange = function() {
+            if (obj.readyState == 4 && obj.status == 200) {
+                tododb = JSON.parse(obj.responseText);
+                ol = document.querySelector("#todolist");
+                for (i in tododb.tasklist) {
+                    li = document.createElement("li");
+                    li.innerHTML = tododb.tasklist[i].task;
+                    ol.appendChild(li);
+                }
+            }
+
+        };
+        obj.send()
+    }
+</script>
+<button onclick="showtodos();">Show All Todo Items</button>
+<ol id="todolist">
+
+</ol>
+</body>
+</html>
