@@ -64,7 +64,21 @@ def todo_one(task_id):
     row = session.query(Todo).filter_by(id=task_id).one()
     return jsonify(task=dict(id=row.id, task=row.task, priority=row.priority, due=row.due.isoformat()))
 
+# Notes:  For a POST this seems particularly important.
+# If The API wants to send JSON as the data part of the post then make sure to set the content type to application/json  data will be in request.json
+# If the API is sending form data then it will send as x-www-form-urlencoded and will be in request.form
+# If the API does not set the content type (or is text/plain or something) then data is in request.data
+# If there is data as a part of the URL then it will be in request.args
 
+@app.route('/todo', methods=['POST'])
+def mark_done():
+    print("got a PUT")
+    # when a POST or PUT is sent, and the content-type is application/x-www-form-urlencoded then
+    # we should get the data from a request.form object not from request.args, request.data or request.query_string
+    #print("id = ", request.form['id'])
+    #print("done = ", request.form['done'])
+    print("json = ", request.json)
+    return "foo"
 
 if __name__ == '__main__':
     app.run()

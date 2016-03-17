@@ -8,7 +8,7 @@
 <script type = "text/javascript">
     function showtodos () {
         console.log("hello")
-        obj = new XMLHttpRequest()
+        var obj = new XMLHttpRequest()
         obj.open("GET","/todo",true)
         obj.onreadystatechange = function() {
             if (obj.readyState == 4 && obj.status == 200) {
@@ -24,10 +24,36 @@
         };
         obj.send()
     }
+
+    function testpost() {
+        var obj = new XMLHttpRequest();
+        obj.open("POST", "/todo", true);
+        params = "id=1&done=true";
+        //obj.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        //obj.setRequestHeader("Content-type","multipart/form-data");
+        obj.setRequestHeader("Content-type","application/json");
+        obj.onreadystatechange = function() {
+            console.log(obj.readyState);
+        };
+        //form = new FormData()
+        //form.append('id','1')
+        //form.append('isdone','true')
+        //obj.send(form)
+        j = JSON.stringify({'id':1, 'isdone':false})
+        obj.send(j);
+
+    }
 </script>
 <button onclick="showtodos();">Show All Todo Items</button>
 <ol id="todolist">
 
 </ol>
+
+<button onclick="testpost();">Test POST</button>
+
+<form action="/foo" method="POST">
+<input type="text" name="foo" value="1">
+<input type="submit" value="Submit">
+</form>
 </body>
 </html>
