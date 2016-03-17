@@ -47,7 +47,6 @@ def hello_world():
     return jsonify({'greeting':'Hello JSON World!'})
 
 
-
 @app.route('/todo', methods=['GET'])
 def todo():
     Session = sessionmaker(bind=engine)
@@ -60,6 +59,15 @@ def todo():
 
     print(reslist)
     return jsonify(tasklist=reslist)
+
+@app.route('/todo/<int:task_id>', methods=['GET'])
+def todo_one(task_id):
+    Session = sessionmaker(bind=engine)
+    Session.configure()
+    session = Session()
+    row = session.query(Todo).filter_by(id=task_id).one()
+    return jsonify(task=dict(id=row.id, task=row.task, priority=row.priority, due=row.due.isoformat()))
+
 
 
 if __name__ == '__main__':
