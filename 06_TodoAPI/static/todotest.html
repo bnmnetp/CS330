@@ -6,6 +6,14 @@
 </head>
 <body>
 <script type = "text/javascript">
+    function docheck () {
+        alert(this.id + " : " + this.checked);
+        // PUT - /todo/<int:id>
+        // Create JSON - {'done' : true}
+        // xmlhttp.send(data)
+        //
+
+    }
     function showtodos () {
         console.log("hello")
         var obj = new XMLHttpRequest()
@@ -13,11 +21,26 @@
         obj.onreadystatechange = function() {
             if (obj.readyState == 4 && obj.status == 200) {
                 tododb = JSON.parse(obj.responseText);
-                ol = document.querySelector("#todolist");
+                table = document.querySelector("#todolist");
                 for (i in tododb.tasklist) {
-                    li = document.createElement("li");
-                    li.innerHTML = tododb.tasklist[i].task;
-                    ol.appendChild(li);
+                    tr = document.createElement("tr");
+                    col1 = document.createElement("td");
+                    check = document.createElement("input");
+                    check.type = "checkbox";
+                    check.id = tododb.tasklist[i].id;
+                    check.onclick = docheck;
+                    col1.appendChild(check);
+                    tr.appendChild(col1);
+                    col2 = document.createElement("td");
+                    col2.appendChild(document.createTextNode(tododb.tasklist[i].task));
+                    tr.appendChild(col2);
+                    col3 = document.createElement("td");
+                    col3.appendChild(document.createTextNode(tododb.tasklist[i].priority))
+                    tr.appendChild(col3)
+                    col4 = document.createElement("td");
+                    col4.appendChild(document.createTextNode(tododb.tasklist[i].due))
+                    tr.appendChild(col4)
+                    table.appendChild(tr);
                 }
             }
 
@@ -45,15 +68,11 @@
     }
 </script>
 <button onclick="showtodos();">Show All Todo Items</button>
-<ol id="todolist">
 
-</ol>
+<table id="todolist">
+</table>
 
 <button onclick="testpost();">Test POST</button>
 
-<form action="/foo" method="POST">
-<input type="text" name="foo" value="1">
-<input type="submit" value="Submit">
-</form>
 </body>
 </html>
