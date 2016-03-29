@@ -44,10 +44,11 @@ def todo():
     print(reslist)
     return jsonify(tasklist=reslist)
 
-@app.route('/todo/<int:task_id>', methods=['GET'])
+@app.route('/todo/<int:task_id>', methods=['PUT'])
 def todo_one(task_id):
-    row = Todo.query.filter_by(id=task_id).one()
-    return jsonify(task=dict(id=row.id, task=row.task, priority=row.priority, due=row.due.isoformat()))
+    row = Todo.query.filter_by(id=task_id).update(dict(done=True))
+    db.session.commit()
+    return "done"
 
 # Notes:  For a POST this seems particularly important.
 # If The API wants to send JSON as the data part of the post then make sure to set the content type to application/json  data will be in request.json

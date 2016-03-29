@@ -7,12 +7,20 @@
 <body>
 <script type = "text/javascript">
     function docheck () {
-        alert(this.id + " : " + this.checked);
         // PUT - /todo/<int:id>
         // Create JSON - {'done' : true}
         // xmlhttp.send(data)
         //
-
+        if (this.checked) {
+            obj = new XMLHttpRequest();
+            obj.open("PUT", "/todo/" + this.id, true);
+            data = JSON.stringify({'done': true});
+            obj.setRequestHeader("Content-Type", "application/json");
+            obj.onreadystatechange = function () {
+                this.style.textDecoration = "strikethrough";
+            };
+            obj.send(data);
+        }
     }
     function showtodos () {
         console.log("hello")
