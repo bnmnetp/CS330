@@ -1,41 +1,32 @@
 from flask import Flask, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
 import os
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy import Column, Integer, String, Date, Boolean
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
 from datetime import date
 from dateutil.parser import parse
 
-engine = create_engine('sqlite:///todo_database.db', echo=False)
-Base = declarative_base()
-
 app = Flask(__name__)
 app.debug = True
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///todo_database.db'
+db = SQLAlchemy(app)
 
-Session = sessionmaker(bind=engine)
-Session.configure()
-session = Session()
-
-
-class Todo(Base):
+class Todo(db.Model):
     __tablename__ = 'todo'
-    id = Column(Integer, primary_key=True)
-    task = Column(String)
-    priority = Column(String)
-    due = Column(Date)
-    done = Column(Boolean)
+    id = db.Column(db.Integer, primary_key=True)
+    task = db.Column(db.String)
+    priority = db.Column(db.String)
+    due = db.Column(db.Date)
+    done = db.Column(db.Boolean)
 
-Base.metadata.create_all(engine)
+db.create_all()
 
-results = session.query(Todo).filter_by(done=False).all()
+results = Todo.query.filter_by(done=False).all()
 if len(results) == 0:
     # make some test data
     task = Todo(task='Make example for 330', priority='High', due=date(2016, 3, 28), done=False)
-    session.add(task)
+    db.session.add(task)
     task = Todo(task='Another example for 330', priority='Medium', due=date(2016, 4, 1), done=False)
-    session.add(task)
-    session.commit()
+    db.session.add(task)
+    db.session.commit()
 
 
 @app.route('/hellojson')
@@ -45,11 +36,8 @@ def hello_world():
 
 @app.route('/todo', methods=['GET'])
 def todo():
-    Session = sessionmaker(bind=engine)
-    Session.configure()
-    session = Session()
     reslist = []
-    results = session.query(Todo).filter_by(done=False).all()
+    results = Todo.query.filter_by(done=False).all()
     for row in results:
         reslist.append(dict(id=row.id, task=row.task, priority=row.priority, due=row.due.isoformat()))
 
@@ -58,10 +46,7 @@ def todo():
 
 @app.route('/todo/<int:task_id>', methods=['GET'])
 def todo_one(task_id):
-    Session = sessionmaker(bind=engine)
-    Session.configure()
-    session = Session()
-    row = session.query(Todo).filter_by(id=task_id).one()
+    row = Todo.query.filter_by(id=task_id).one()
     return jsonify(task=dict(id=row.id, task=row.task, priority=row.priority, due=row.due.isoformat()))
 
 # Notes:  For a POST this seems particularly important.
