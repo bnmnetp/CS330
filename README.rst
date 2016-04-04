@@ -128,3 +128,17 @@ The goals of this first unit are to understand a bit about Network programming, 
 
     * I highly recommend you buy `Flask Web Development by Miguel Grinberg <http://flaskbook.com>`_
     * It is based on this series of posts: `The Flask Mega Tutorial <http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-now-with-python-3-support>`_  But it is expanded and well worth the $$.
+
+
+* Week of April 4
+
+  * See `Mashup Information <https://github.com/bnmnetp/CS330/blob/master/mashup.md>`_
+
+  * Javascript
+
+    * Writing classes in Javascript
+    * Tour of builtin classes
+
+  * Security and Potential Pitfalls of the mashup
+
+    * CORS -- Cross Origin Resource Sharing
