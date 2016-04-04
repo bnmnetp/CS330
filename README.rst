@@ -110,3 +110,21 @@ The goals of this first unit are to understand a bit about Network programming, 
     * Readings
 
         * `Designing a RESTful API <http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>`_
+        * `XMLHttpRequest <http://www.w3schools.com/ajax/ajax_xmlhttprequest_create.asp>`_
+
+
+* Week of March 28
+
+  * Javascript Tour
+
+    * A quick and incomplete tour of a few important Javascript concepts (Arrays, Objects, Prototype Inheritance, Strings, iteration)
+
+    * `Great Documentation and Examples <http://www.w3schools.com/js/default.asp>`_
+    * `Prototypal Inheritance <http://blog.vjeux.com/2011/javascript/how-prototypal-inheritance-really-works.html>`_
+
+  * Midterm Mashups
+
+  * Readings
+
+    * I highly recommend you buy `Flask Web Development by Miguel Grinberg <http://flaskbook.com>`_
+    * It is based on this series of posts: `The Flask Mega Tutorial <http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-now-with-python-3-support>`_  But it is expanded and well worth the $$.
