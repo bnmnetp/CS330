@@ -142,3 +142,23 @@ The goals of this first unit are to understand a bit about Network programming, 
   * Security and Potential Pitfalls of the mashup
 
     * CORS -- Cross Origin Resource Sharing
+
+  * Readings
+
+    * `requests package <http://docs.python-requests.org/en/master/>`_
+    * `CORS Overview <http://www.html5rocks.com/en/tutorials/cors/>`_
+    * `OOP in Javascript Part 1 <http://phrogz.net/js/classes/OOPinJS.html>`_
+    * `OOP in Javascript Part 2 Inheritance <http://phrogz.net/js/classes/OOPinJS2.html>`_
+
+
+* Week of April 11
+
+    * WSGI in Depth
+    * Template Languages (Jinja2 and the like)
+    * Decorators exposed
+
+
+* Week of April 18
+
+    * Tuesday:   Demo day for mashups
+    
