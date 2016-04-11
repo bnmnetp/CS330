@@ -5,4 +5,5 @@
 *.fls
 *.synctex.gz
 *~
+*.db
 
