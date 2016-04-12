@@ -6,4 +6,5 @@
 *.synctex.gz
 *~
 *.db
+.idea
 
