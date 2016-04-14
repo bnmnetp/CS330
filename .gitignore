@@ -5,4 +5,7 @@
 *.fls
 *.synctex.gz
 *~
+*.db
+*.pyc
+__pycache__/
 
