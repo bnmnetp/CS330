@@ -7,11 +7,11 @@ def hello_world(environ, start_response):
     else:
         subject = 'World'
     start_response('200 OK', [('Content-Type', 'text/html')])
-    return ['''Hello %(subject)s
+    resp = '''Hello %(subject)s
     Hello %(subject)s!
 
-''' % {'subject': subject}]
-
+''' % {'subject': subject}
+    return [resp.encode('utf8')]
 
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
