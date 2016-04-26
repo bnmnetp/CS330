@@ -24,6 +24,15 @@ class FlaskApp:
     def addroute(self,url,func):
         self.urlmatch[url] = func
 
+    def route(self,url):
+        def routewrapper(fun):
+            self.urlmatch[url] = fun
+
+            return fun
+        return routewrapper
+
+app = FlaskApp()
+
 @app.route('/')
 def hello():
     return "<h1>Hello World</h1>"
@@ -32,5 +41,6 @@ def hello():
 def goodbye():
     return "<h1>Goodbye and thanks for all the fish!</h1>"
 
-app = FlaskApp()
+
+
 
