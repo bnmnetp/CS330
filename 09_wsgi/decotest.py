@@ -41,7 +41,6 @@ class classdecorator:
         self.fun = thefunc
 
     def __call__(self, *args, **kwargs):
-        print('preparing to call decorated func')
         self.numCalls += 1
         return self.fun(*args,**kwargs)
 
@@ -55,3 +54,38 @@ for i in range(20):
 
 print("baz was called {} times".format(baz.numCalls))
 
+@classdecorator
+def fact(n):
+    if n <= 1:
+        return 1
+    return n * fact(n-1)
+
+print(fact(100))
+print(fact.numCalls)
+
+
+
+class memoizer:
+    def __init__(self,thefunc):
+        self.argdict = {}
+        self.fun = thefunc
+
+    def __call__(self,*args, **kwargs):
+        myarg = args[0]
+        if myarg in self.argdict:
+            return self.argdict[myarg]
+        else:
+            res = self.fun(*args,**kwargs)
+            self.argdict[myarg] = res
+            return res
+@classdecorator
+@memoizer
+def fib(n):
+    if n <= 1:
+        return 1
+    else:
+        return fib(n-1)+fib(n-2)
+
+for i in range(30):
+    print(i, fib(i))
+    print(fib.numCalls)
