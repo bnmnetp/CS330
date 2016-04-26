@@ -71,12 +71,11 @@ class memoizer:
         self.fun = thefunc
 
     def __call__(self,*args, **kwargs):
-        myarg = args[0]
-        if myarg in self.argdict:
-            return self.argdict[myarg]
+        if args in self.argdict:
+            return self.argdict[args]
         else:
             res = self.fun(*args,**kwargs)
-            self.argdict[myarg] = res
+            self.argdict[args] = res
             return res
 @classdecorator
 @memoizer
