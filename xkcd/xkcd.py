@@ -2,9 +2,7 @@ from flask import Flask, render_template, request, session
 from flask.ext.wtf import Form
 from flask_bootstrap import Bootstrap
 from wtforms import SelectField, DecimalField, SubmitField, BooleanField
-from flask.ext.script import Manager, Shell
 from xkcdpass import makePasswordList, doLetterSubs
-import os
 
 #
 #  App Initializations
@@ -14,9 +12,6 @@ Bootstrap(app)
 
 app.debug = True   # need this for autoreload as well as stack trace
 app.secret_key = 'luthercollege'
-
-basedir = os.path.abspath(os.path.dirname(__file__))
-manager = Manager(app)
 
 #
 # Forms
@@ -51,4 +46,4 @@ def index():
 
 
 if __name__ == '__main__':
-    manager.run()
+    app.run()
