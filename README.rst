@@ -155,7 +155,8 @@ The goals of this first unit are to understand a bit about Network programming, 
 
     * Template Languages (Jinja2 and the like)
     * WSGI in Depth
-    * Decorators exposed
+    * Callables
+    * Introduction to decorators
 
     * Readings
 
@@ -169,3 +170,9 @@ The goals of this first unit are to understand a bit about Network programming, 
 * Week of April 18
 
     * Tuesday:   Demo day for mashups
+    * Decorators and WSGI routing
+
+* Week of April 27
+
+    * Tuesday:  Finish decorators, decorators with parameters, and add a routing method to the app object.
+    * Thursday:  Bootstrap and the Bootstrap plugin, Final Project
