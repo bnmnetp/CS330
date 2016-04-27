@@ -3,7 +3,7 @@ from flask.ext.wtf import Form
 from flask_bootstrap import Bootstrap
 from wtforms import SelectField, DecimalField, SubmitField, BooleanField
 from xkcdpass import makePasswordList, doLetterSubs
-
+from wtforms.validators import DataRequired
 #
 #  App Initializations
 #
@@ -22,7 +22,7 @@ class PWSelections(Form):
                             choices=[('3','3'),('4','4'),('5','5')])
     maxLength = SelectField('Maximum Word Length',
                    choices=[('4','4'),('5','5'),('6','6'),('7','7'),('8','8')])
-    maxPwLen = DecimalField('Max Length')
+    maxPwLen = DecimalField('Max Length',validators=[DataRequired()])
     alternate = BooleanField('Easy Typing')
     lettersubs = BooleanField('Number Substitutions')
     submit = SubmitField('Submit')
