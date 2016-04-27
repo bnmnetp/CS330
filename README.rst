@@ -174,5 +174,17 @@ The goals of this first unit are to understand a bit about Network programming, 
 
 * Week of April 27
 
-    * Tuesday:  Finish decorators, decorators with parameters, and add a routing method to the app object.
+    * Tuesday:
+
+      * Finish decorators, decorators with parameters
+      * Add a routing method to the app object
+      * Look at Example with Bootstrap and WTForms
+
     * Thursday:  Bootstrap and the Bootstrap plugin, Final Project
+
+    * Readings:
+
+      * `Bootstrap Tutorial <http://www.w3schools.com/bootstrap/default.asp>`_
+      * `Flask WTF <https://flask-wtf.readthedocs.org/en/latest/>`_
+
+      
