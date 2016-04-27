@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}XKCD Password{% endblock %}
+
+
+{% block content %}
+<h1>XKCD Password Generator</h1>
+{{ wtf.quick_form(form,form_type='horizontal',horizontal_columns=('sm',4,4),button_map={'submit': 'primary'}) }}
+
+{% endblock %}}
