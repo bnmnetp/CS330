@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 
 {% block title %}XKCD Password{% endblock %}
-
+{% block navbar %}
+<nav class="navbar navbar-default">
+<ul class="nav navbar-nav">
+    <li><a href="#">Foo</a></li>
+</ul>
+<button type="button" class="btn btn-default navbar-btn">Sign in</button>
+</nav>
+{% endblock %}
 
 {% block content %}
 <h1>XKCD Password Generator</h1>
