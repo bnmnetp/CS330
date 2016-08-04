@@ -160,6 +160,7 @@ The goals of this first unit are to understand a bit about Network programming, 
 
     * Readings
 
+      * `How Template Engines Work <https://fengsp.github.io/blog/2016/8/how-a-template-engine-works/>`_
       * `Jinja2 docs <http://jinja.pocoo.org>`_
       * `https://devcenter.heroku.com/articles/getting-started-with-python#introduction`_
       * `WSGI <http://lucumr.pocoo.org/2007/5/21/getting-started-with-wsgi/>`_
