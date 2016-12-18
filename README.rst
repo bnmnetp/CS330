@@ -16,8 +16,33 @@ Because we will be installing a lot of third party packages, and because a big p
 * Kent has written up a nice set of instructions for `installing Ubuntu <http://knuth.luther.edu/~leekent/stories/installing-linux-in-our-lab.html>`_
 
 
+Unit 1 - Javascript Fundamentals
+--------------------------------
 
-Unit 1 - Networking Basics
+Most of you have only had a small taste of Javascript in CS-130.  Here we'll compare Javascript to Python highligting the key differences and main features of Javascript for programming in the browser.
+
+Week of February 2
+~~~~~~~~~~~~~~~~~~
+
+* Thursday
+  - Admin
+  - The Web Programming Architecture
+  - Review of DOM
+  - Javascript Syntax and basic structures
+  - For Tuesday Read Javascript for Python Programmers Part I  and Do practice exercises
+
+Week of February 7
+~~~~~~~~~~~~~~~~~~
+
+* Tuesday
+  - Javascript Data types and Examples
+  - For Thursday Read Javascript for Python Programmers Part II
+
+* Thursday
+  - Javascript Quiz 1
+
+
+Unit 2 - Networking Basics
 --------------------------
 
 The goals of this first unit are to understand a bit about Network programming, as this forms the basis for how the web server and the browser communicate with each other.
