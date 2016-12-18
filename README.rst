@@ -16,8 +16,33 @@ Because we will be installing a lot of third party packages, and because a big p
 * Kent has written up a nice set of instructions for `installing Ubuntu <http://knuth.luther.edu/~leekent/stories/installing-linux-in-our-lab.html>`_
 
 
+Unit 1 - Javascript Fundamentals
+--------------------------------
 
-Unit 1 - Networking Basics
+Most of you have only had a small taste of Javascript in CS-130.  Here we'll compare Javascript to Python highligting the key differences and main features of Javascript for programming in the browser.
+
+Week of February 2
+~~~~~~~~~~~~~~~~~~
+
+* Thursday
+  - Admin
+  - The Web Programming Architecture
+  - Review of DOM
+  - Javascript Syntax and basic structures
+  - For Tuesday Read Javascript for Python Programmers Part I  and Do practice exercises
+
+Week of February 7
+~~~~~~~~~~~~~~~~~~
+
+* Tuesday
+  - Javascript Data types and Examples
+  - For Thursday Read Javascript for Python Programmers Part II
+
+* Thursday
+  - Javascript Quiz 1
+
+
+Unit 2 - Networking Basics
 --------------------------
 
 The goals of this first unit are to understand a bit about Network programming, as this forms the basis for how the web server and the browser communicate with each other.
@@ -82,109 +107,4 @@ The goals of this first unit are to understand a bit about Network programming, 
 
     * Readings
 
-        * `SQLAlchemy Tutorial <http://docs.sqlalchemy.org/en/latest/orm/tutorial.html>`_
-        * `SQLITE3 Tutorial <https://docs.python.org/2/library/sqlite3.html>`_
-
-* Week of March 7
-
-    * Tuesday
-
-        * Finish up CGI TODO
-        * Using SQLAlchecmy -- a Better Database Interface
-        * Understanding the Descriptors used by SQLAlchemy and others
-
-    * Readings
-
-        * `Python Descriptors Demystified <http://nbviewer.jupyter.org/urls/gist.github.com/ChrisBeaumont/5758381/raw/descriptor_writeup.ipynb>`_
-
-* Week of March 14
-
-    * Web 2.0 -- Services and Javascript
-
-        * Review the SQLAlchemy based todo app
-        * Designing a Web API
-        * AJAX / XMLHttpRequest Objects
-        * JSON
-        * A Hybrid TODO - Javasript on the Front end and Services on the back
-
-    * Readings
-
-        * `Designing a RESTful API <http://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask>`_
-        * `XMLHttpRequest <http://www.w3schools.com/ajax/ajax_xmlhttprequest_create.asp>`_
-
-
-* Week of March 28
-
-  * Javascript Tour
-
-    * A quick and incomplete tour of a few important Javascript concepts (Arrays, Objects, Prototype Inheritance, Strings, iteration)
-
-    * `Great Documentation and Examples <http://www.w3schools.com/js/default.asp>`_
-    * `Prototypal Inheritance <http://blog.vjeux.com/2011/javascript/how-prototypal-inheritance-really-works.html>`_
-
-  * Midterm Mashups
-
-  * Readings
-
-    * I highly recommend you buy `Flask Web Development by Miguel Grinberg <http://flaskbook.com>`_
-    * It is based on this series of posts: `The Flask Mega Tutorial <http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-now-with-python-3-support>`_  But it is expanded and well worth the $$.
-
-
-* Week of April 4
-
-  * See `Mashup Information <https://github.com/bnmnetp/CS330/blob/master/mashup.md>`_
-
-  * Javascript
-
-    * Writing classes in Javascript
-    * Tour of builtin classes
-
-  * Security and Potential Pitfalls of the mashup
-
-    * CORS -- Cross Origin Resource Sharing
-
-  * Readings
-
-    * `requests package <http://docs.python-requests.org/en/master/>`_
-    * `CORS Overview <http://www.html5rocks.com/en/tutorials/cors/>`_
-    * `OOP in Javascript Part 1 <http://phrogz.net/js/classes/OOPinJS.html>`_
-    * `OOP in Javascript Part 2 Inheritance <http://phrogz.net/js/classes/OOPinJS2.html>`_
-
-
-* Week of April 11
-
-    * Template Languages (Jinja2 and the like)
-    * WSGI in Depth
-    * Callables
-    * Introduction to decorators
-
-    * Readings
-
-      * `How Template Engines Work <https://fengsp.github.io/blog/2016/8/how-a-template-engine-works/>`_
-      * `Jinja2 docs <http://jinja.pocoo.org>`_
-      * `https://devcenter.heroku.com/articles/getting-started-with-python#introduction`_
-      * `WSGI <http://lucumr.pocoo.org/2007/5/21/getting-started-with-wsgi/>`_
-      * `Codepoint WSGI article <http://wsgi.tutorial.codepoint.net>`_
-      * `The full WSGI PEP <http://www.python.org/dev/peps/pep-0333/>`_
-
-
-* Week of April 18
-
-    * Tuesday:   Demo day for mashups
-    * Decorators and WSGI routing
-
-* Week of April 27
-
-    * Tuesday:
-
-      * Finish decorators, decorators with parameters
-      * Add a routing method to the app object
-      * Look at Example with Bootstrap and WTForms
-
-    * Thursday:  Bootstrap and the Bootstrap plugin, Final Project
-
-    * Readings:
-
-      * `Bootstrap Tutorial <http://www.w3schools.com/bootstrap/default.asp>`_
-      * `Flask WTF <https://flask-wtf.readthedocs.org/en/latest/>`_
-      * `Flask-Bootstrap <https://pythonhosted.org/Flask-Bootstrap/index.html>`_
+        * [SQLAlchemy Tutorial](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
