@@ -39,47 +39,68 @@ Week of February 7
   - For Thursday Read Javascript for Python Programmers Part II
 
 * Thursday
+  - Writing classes in Javascript
+  - More Javascript Helper Objects
   - Javascript Quiz 1
+  - Javascript programming project 1
 
+Week of February 14
+~~~~~~~~~~~~~~~~~~~
+
+* Tuesday
+  - XMLHTTP Request Objects
+  - Web API's
+
+* Thursday
+  - Mashups
+  - Javascript Quiz 2
+  - Mashup Project
 
 Unit 2 - Networking Basics
 --------------------------
 
-The goals of this first unit are to understand a bit about Network programming, as this forms the basis for how the web server and the browser communicate with each other.
+The goals of this unit are to understand a bit about Network programming, as this forms the basis for how the web server and the browser communicate with each other.
 
-* Week of February 7
+Week of February 21
+~~~~~~~~~~~~~~~~~~~
 
-    * Tuesday - Get Linux environments installed and configured
+* Tuesday
+  - Get Linux environments installed and configured
+  Configure Network for 'Bridged Mode' so we can access server
+  Test the echoServer3.py and echoclient3.py programs with a partner
 
-        * Configure Network for 'Bridged Mode' so we can access server
-        * Test the echoServer3.py and echoclient3.py programs with a partner
+* Thursday
+  - Look at Multithreading and Multi-process models of the echo server
 
-    * Thursday - Look at Multithreading and Multi-process models of the echo server
+  * See echoServerMT.py and echoServerMP.py
+  * Demonstrate a simple python webserver
+  * start to write our own webserver based on echoServerXX.py
+  * Quiz on the readings
 
-        * See echoServerMT.py and echoServerMP.py
-        * Demonstrate a simple python webserver
-        * start to write our own webserver based on echoServerXX.py
+* Readings
 
-    * Readings
-
-        * `Networking Basics <http://www.bogotobogo.com/cplusplus/sockets_server_client.php>`_
-        * `A Simple Client/Server <http://www.bogotobogo.com/python/python_network_programming_server_client.php>`_
-
+  * `Networking Basics <http://www.bogotobogo.com/cplusplus/sockets_server_client.php>`_
+  * `A Simple Client/Server <http://www.bogotobogo.com/python/python_network_programming_server_client.php>`_
 
 
-* Week of February 14
 
-    * Tuesday  - Chat server with asyncio
+Week of February 28
+~~~~~~~~~~~~~~~~~~~
 
-    * Thursday - A multithreaded web server
+* Tuesday
+  - Chat server with asyncio
 
-    * Readings
+* Thursday
+  - A multithreaded web server
+  - Quiz on Readings
 
-        * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
-        * `Another Intro <http://www.tutorialspoint.com/http/index.htm>`_
-        * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
+* Readings
 
-* Week of February 20
+  * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
+  * `Another Intro <http://www.tutorialspoint.com/http/index.htm>`_
+  * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
+
+* Week of March
 
     * Tuesday  -  Introduction to CGI Programming
 
@@ -96,7 +117,7 @@ The goals of this first unit are to understand a bit about Network programming, 
         * Forms and Form Processing
         * The ooolld todo app as a server side program
 
-* Week of February 29
+* Week of March
 
     * Tuesday - Database Access
 
