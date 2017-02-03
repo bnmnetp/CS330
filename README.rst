@@ -1,6 +1,8 @@
 CS-330 Internet Programming
 ===========================
 
+* Office Hours: 2:00 -- 3:00 Daily.  By Appointment, `Use my Calendar <https://calendar.google.com/calendar/embed?mode=WEEK&src=millbr02%40luther.edu&ctz=America/Chicago>`_  Do not email me to ask when I can meet, use the calendar.
+* Slack Channel:  I'll use this to post hints and screen captures of notes.  Using your norsekey `signup for slack <https://luthercs.slack.com/signup>`_ Then join the internetprogramming channel
 
 Getting your environment set up
 -------------------------------
@@ -25,6 +27,7 @@ Week of February 2
 ~~~~~~~~~~~~~~~~~~
 
 * Thursday
+
   - Admin
   - The Web Programming Architecture
   - Review of DOM
@@ -32,10 +35,12 @@ Week of February 2
   - Javascript Syntax and basic structures
   - For Tuesday Read `Javascript for Python Programmers Part I <http://interactivepython.org/runestone/static/JS4Python/TheBasics/JS4Python.html>`_  and Do practice exercises
 
+
 Week of February 7
 ~~~~~~~~~~~~~~~~~~
 
 * Tuesday
+
   - Javascript Data types and Examples
   - For Thursday Read Javascript for Python Programmers Part II
 
