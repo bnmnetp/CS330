@@ -30,7 +30,6 @@ Week of February 2
 
   - Admin
   - The Web Programming Architecture
-  - Review of DOM
   - Javascript `Pretest <http://interactivepython.org/runestone/static/JS4Python/pretest.html>`_ 30 minutes
   - Javascript Syntax and basic structures
   - For Tuesday Read `Javascript for Python Programmers Part I <http://interactivepython.org/runestone/static/JS4Python/TheBasics/JS4Python.html>`_  and Do practice exercises 1, 2, and 5
@@ -43,12 +42,13 @@ Week of February 7
 
   - Javascript Data types and Examples
   - For Thursday Read Javascript for Python Programmers Part II
+  - For Thursday, if you did not complete practice exercises 3 and 5 finish them by Thursday.
 
 * Thursday
   - Writing classes in Javascript
+  - The document Object Model
   - More Javascript Helper Objects
-  - Javascript Quiz 1
-  - Javascript programming project 1
+
 
 Week of February 14
 ~~~~~~~~~~~~~~~~~~~
