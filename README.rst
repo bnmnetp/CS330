@@ -32,7 +32,7 @@ Week of February 2
   - The Web Programming Architecture
   - Javascript `Pretest <http://interactivepython.org/runestone/static/JS4Python/pretest.html>`_ 30 minutes
   - Javascript Syntax and basic structures
-  - For Tuesday Read `Javascript for Python Programmers Part I <http://interactivepython.org/runestone/static/JS4Python/TheBasics/JS4Python.html>`_  and Do practice exercises 1, 2, and 5
+  - For Tuesday Read `Javascript for Python Programmers Part I <http://interactivepython.org/runestone/static/JS4Python/TheBasics/JS4Python.html>`_  and Do practice exercises 1, 3, and 5
 
 
 Week of February 7
