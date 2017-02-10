@@ -47,20 +47,26 @@ Week of February 7
 * Thursday
   - Writing classes in Javascript
   - The document Object Model
-  - More Javascript Helper Objects
+  - Javascript Events and event driven programming
 
+**For Tuesday**
+
+* Do practice Exercise classes_3  -- Implement a stack class
+* Create a web page that has a button on it.  Each time the button is pressed the next prime number should be displayed on the page along with the button.  The prime number should be displayed in an h1 with the id of 'nextprime' and the button should have an id of 'primebutton'.  This web page should be public in your account on knuth.luther.edu and I should be able to access the page using ``http://knuth.luther.edu/~youruser/buttontest.html``
 
 Week of February 14
 ~~~~~~~~~~~~~~~~~~~
 
 * Tuesday
-  - XMLHTTP Request Objects
+  - Javascript Quiz - 30 mins on Javascript basics and classes
+  - Creating an Expense tracking web application
   - Web API's
 
 * Thursday
   - Mashups
   - Javascript Quiz 2
   - Mashup Project
+  - XMLHTTP Request Objects
 
 Unit 2 - Networking Basics
 --------------------------
