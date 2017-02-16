@@ -64,8 +64,6 @@ Week of February 14
 
 * Thursday
   - Mashups
-  - Javascript Quiz 2
-  - Mashup Project
   - XMLHTTP Request Objects
 
 Unit 2 - Networking Basics
