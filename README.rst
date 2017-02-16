@@ -63,10 +63,21 @@ Week of February 14
   - Web API's
 
 * Thursday
-  - Mashups
-  - Javascript Quiz 2
-  - Mashup Project
+  - Check your grade on the quiz
+  - Check your registration on interactivepython.org  -- Need to be in JS4Python
+  - Expense Tracking SPA
+  - Bootstrap
+  - jQuery
+
+Week of February 21
+~~~~~~~~~~~~~~~~~~~
+
+* Tuesday
+
+  - An expense API
   - XMLHTTP Request Objects
+
+* Thursday
 
 Unit 2 - Networking Basics
 --------------------------
