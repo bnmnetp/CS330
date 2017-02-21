@@ -74,10 +74,22 @@ Week of February 21
 
 * Tuesday
 
+  - Automated Testing with Selenium
+  - Common Problems / Debugging
+    - Submit buttons
+    - static versus non-static functions and properties
+  - Expense Tracking
+    - localStorage - save
+    - localStorage - restore
+    - filtering the list by category
   - An expense API
   - XMLHTTP Request Objects
 
 * Thursday
+
+  - Continuation of what we don't finish on Tuesday
+  - CORS
+
 
 Unit 2 - Networking Basics
 --------------------------
