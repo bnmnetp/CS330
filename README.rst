@@ -78,10 +78,12 @@ Week of February 21
   - Common Problems / Debugging
     - Submit buttons
     - static versus non-static functions and properties
+  - JSON - Javascript Object Notation
   - Expense Tracking
     - localStorage - save
     - localStorage - restore
     - filtering the list by category
+    - sorting
   - An expense API
   - XMLHTTP Request Objects
 
@@ -90,6 +92,8 @@ Week of February 21
   - Continuation of what we don't finish on Tuesday
   - CORS
 
+* Resources / Readings
+  - `Introduction to JSON <https://www.w3schools.com/js/js_json_intro.asp>`_
 
 Unit 2 - Networking Basics
 --------------------------
