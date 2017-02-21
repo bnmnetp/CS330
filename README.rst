@@ -87,9 +87,16 @@ Week of February 21
   - An expense API
   - XMLHTTP Request Objects
 
+**Assignment**
+
+* By class on thursday your page should save and restore your entered expenses.  Make sure that you have the latest deployed on knuth under expenses.html
+
 * Thursday
 
-  - Continuation of what we don't finish on Tuesday
+  - filtering the list by category
+  - sorting
+  - An expense API
+  - XMLHTTP Request Objects
   - CORS
 
 * Resources / Readings
