@@ -95,20 +95,54 @@ Week of February 21
 
   - filtering the list by category
   - sorting
-  - An expense API
-  - XMLHTTP Request Objects
-  - CORS
+
 
 * Resources / Readings
   - `Introduction to JSON <https://www.w3schools.com/js/js_json_intro.asp>`_
 
-Unit 2 - Networking Basics
---------------------------
 
-The goals of this unit are to understand a bit about Network programming, as this forms the basis for how the web server and the browser communicate with each other.
-
-Week of February 21
+Week of February 28
 ~~~~~~~~~~~~~~~~~~~
+
+* Tuesday
+  - HTTP Protocol
+  - REST
+  - An expense API and server the easy way
+  - An easy AJAX interface
+  - CORS
+
+* Thursday
+  - XMLHTTP Request Objects
+  - Quiz on HTTP/Ajax/Javascript
+
+* Readings
+
+  * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
+  * `Another Intro <http://www.tutorialspoint.com/http/index.htm>`_
+  * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
+
+
+* Week of March ...
+
+    * Tuesday  -  Introduction to CGI Programming
+
+        * A Hello World Example
+        * Parameters and Interprocess communication
+        * Readings
+
+           * `Server Side Intro <http://interactivepython.org/runestone/static/webfundamentals/CGI/basiccgi.html>`_
+           * `User Input <http://interactivepython.org/runestone/static/webfundamentals/CGI/forms.html>`_
+           * `W3Schools Forms <http://www.w3schools.com/html/html_forms.asp>`_
+
+    * Thursday - Extending our webserver to support CGI programming
+
+        * Forms and Form Processing
+        * The ooolld todo app as a server side program
+
+
+
+Someday Maybe
+~~~~~~~~~~~~~
 
 * Tuesday
   - Get Linux environments installed and configured
@@ -127,41 +161,6 @@ Week of February 21
 
   * `Networking Basics <http://www.bogotobogo.com/cplusplus/sockets_server_client.php>`_
   * `A Simple Client/Server <http://www.bogotobogo.com/python/python_network_programming_server_client.php>`_
-
-
-
-Week of February 28
-~~~~~~~~~~~~~~~~~~~
-
-* Tuesday
-  - Chat server with asyncio
-
-* Thursday
-  - A multithreaded web server
-  - Quiz on Readings
-
-* Readings
-
-  * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
-  * `Another Intro <http://www.tutorialspoint.com/http/index.htm>`_
-  * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
-
-* Week of March
-
-    * Tuesday  -  Introduction to CGI Programming
-
-        * A Hello World Example
-        * Parameters and Interprocess communication
-        * Readings
-
-           * `Server Side Intro <http://interactivepython.org/runestone/static/webfundamentals/CGI/basiccgi.html>`_
-           * `User Input <http://interactivepython.org/runestone/static/webfundamentals/CGI/forms.html>`_
-           * `W3Schools Forms <http://www.w3schools.com/html/html_forms.asp>`_
-
-    * Thursday - Extending our webserver to support CGI programming
-
-        * Forms and Form Processing
-        * The ooolld todo app as a server side program
 
 * Week of March
 
