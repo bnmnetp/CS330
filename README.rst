@@ -112,8 +112,9 @@ Week of February 28
   - CORS
 
 * Thursday
+  - Finishing jQuery interface to our server
   - XMLHTTP Request Objects
-  - Quiz on HTTP/Ajax/Javascript
+
 
 * Readings
 
