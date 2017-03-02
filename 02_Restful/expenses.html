@@ -45,7 +45,7 @@
     <div class="expenselist">
         <table class="table table-striped" id="expensetable">
             <tr>
-                <th>date</th>
+                <th onclick="ec.redrawTable(sortby='date')">date</th>
                 <th>Store</th>
                 <th>category</th>
                 <th>item</th>
@@ -54,7 +54,7 @@
         </table>
     </div>
     <script type="text/javascript" src="expenses.js"></script>
-    <script type="text/javascript" src="exp_controller.js"></script>    
+    <script type="text/javascript" src="exp_controller.js"></script>
     <script>
         $(function() {
             $("#inputdate").datepicker();

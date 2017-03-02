@@ -5,7 +5,7 @@ class ExpenseController {
         this.edb = new ExpenseDB();
     }
 
-    redrawTable() {
+    redrawTable(sortby=null, filterby=null) {
         let table = document.getElementById("expensetable").getElementsByTagName('tbody')[0]
         let rows = table.getElementsByTagName('tr')
 
@@ -50,9 +50,23 @@ class ExpenseController {
     updateTable() {
     }
 
+    filterby() {
+        let filtercrit = this;
+    }
+
     doReload() {
-        this.edb.reloadMe();
-        this.redrawTable();
+        var waitfor = this.edb.reloadMe();
+        // let xhr = new XMLHttpRequest();
+        // xhr.open('GET','http://localhost:5000/api/v1/expenses', true);
+        // xhr.send(null);
+        // xhr.onload = function() {
+        //     console.log('done')
+        //     console.log(this.responseText)
+        // }
+        // waitfor.done( (function() {
+        //     this.redrawTable();
+        // }).bind(this) );
+        $("#expensetable").on("edbupdate", this.redrawTable.bind(this));
     }
 
 }

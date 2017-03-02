@@ -28,7 +28,7 @@ class ExpenseDB {
 
     newExpense(e) {
         this.allExpenses.push(e);
-        this.saveMe()
+        this.saveMe(e)
     }
 
     getExpenses() {
@@ -36,14 +36,28 @@ class ExpenseDB {
     }
 
     reloadMe() {
-        let obs = JSON.parse(localStorage.expensedb);
-        for(let e of obs) {
-            e = new Expense(e.date, e.store, e.category, e.item, e.amount);
-            this.allExpenses.push(e);
-        }
+        var waitfor = new $.Deferred();
+        var self = this;
+        $.ajax({
+            url: "http://www.runestone.academy:8001/api/v1/expenses"
+        }).done(function(data) {
+            for(let e of data) {
+                e = new Expense(e.date, e.store, e.category, e.item, e.amount);
+                self.allExpenses.push(e);
+            }
+            //waitfor.resolve()
+            $("#expensetable").trigger("edbupdate")
+        });
+        return waitfor;
     }
 
-    saveMe() {
-        localStorage.expensedb = JSON.stringify(this.allExpenses);
+    saveMe(e) {
+        //localStorage.expensedb = JSON.stringify(this.allExpenses);
+        $.ajax({
+            url: "http://localhost:8088/api/v1/expenses",
+            method: 'POST',
+            crossDomain: true,
+            data: JSON.stringify(e)
+        }).done(function(data) {alert(data)});
     }
 }
