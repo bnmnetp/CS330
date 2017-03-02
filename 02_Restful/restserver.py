@@ -25,9 +25,12 @@ def get_expenses(expense_id=None):
 def save_expense():
     edb = mongo.db.expenses
     newexp = request.json
-
     edb.insert(newexp)
-    return dumps(newexp)
+    res = Response(dumps({"status":"OK"}))
+    res.headers['Access-Control-Allow-Origin'] = '*'
+    res.headers['Content-type'] = 'application/json'
+
+    return res
 
 
 if __name__ == '__main__':
