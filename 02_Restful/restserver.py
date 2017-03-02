@@ -40,25 +40,4 @@ if __name__ == '__main__':
 # POST
 # /api/v1/expenses  -- Create new expense data is in the data block
 
-
-# '{"date": "2017-02-28", "store": "ace", "category": "law", "item": "lawnmower", "amount": 200.55}'
-
-# class Expense:
-#     def __init__(self, date, store, category, item, amount ):
-#         self.date = date
-#         self.store = store
-#         self.category = category
-#         self.item = item
-#         self.amount = float(amount)
-#
-# e = Expense("2017-02-22", "fareway", "grocery", "milk", "2.00")
-# @app.route('/foo')
-# def foo():
-#     print("db = ", mongo.db)
-#     edb = mongo.db['millbr02']
-#     eid = edb.insert(e.__dict__)
-#     res = edb.find_one({'_id': eid})
-#
-#     return dumps(res)
-
 # curl -H "Content-Type: application/json" -X POST -d '{"date": "2017-02-28", "store": "ace", "category": "law", "item": "lawnmower", "amount": 200.55}'
