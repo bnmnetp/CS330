@@ -104,13 +104,6 @@ Week of February 21
 Week of February 28
 ~~~~~~~~~~~~~~~~~~~
 
-* Tuesday
-  - HTTP Protocol
-  - REST
-  - An expense API and server the easy way
-  - An easy AJAX interface
-  - CORS
-
 * Thursday
   - Finishing jQuery interface to our server
   - Flask -- Hello world
@@ -129,19 +122,6 @@ Week of February 28
   * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
   * `PyMongo Documentation <http://api.mongodb.com/python/current/index.html>`_
   * `jQuery Documentation <http://api.jquery.com>`_
-
-
-* Week of March 7
-
-  * Tuesday
-    * CORS
-    * A Multi-user server
-    * Introduction to midterm mashups
-
-  * Thursday
-    * No Class
-
-
 
 
 Someday Maybe
