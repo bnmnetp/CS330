@@ -113,17 +113,40 @@ Week of February 28
 
 * Thursday
   - Finishing jQuery interface to our server
-  - XMLHTTP Request Objects
+  - Flask -- Hello world
+  - Getting the restserver.py program running
+  - re-implementing the saveMe
 
+**For Tuesday**
+  - Add a checkbox, or button to each expense that will allow you to delete an expense.
+  - Add a method to restserver.py that will handle the DELETE request.
+  - You will almost certainly need to check the PyMongo and/or jQuery documentation
 
-* Readings
+* Readings and Resources
 
   * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
   * `Another Intro <http://www.tutorialspoint.com/http/index.htm>`_
   * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
+  * `PyMongo Documentation <http://api.mongodb.com/python/current/index.html>`_
+  * `jQuery Documentation <http://api.jquery.com>`_
 
 
-* Week of March ...
+* Week of March 7
+
+  * Tuesday
+    * CORS
+    * A Multi-user server
+    * Introduction to midterm mashups
+
+  * Thursday
+    * No Class
+
+
+
+
+Someday Maybe
+~~~~~~~~~~~~~
+
 
     * Tuesday  -  Introduction to CGI Programming
 
@@ -141,9 +164,6 @@ Week of February 28
         * The ooolld todo app as a server side program
 
 
-
-Someday Maybe
-~~~~~~~~~~~~~
 
 * Tuesday
   - Get Linux environments installed and configured
