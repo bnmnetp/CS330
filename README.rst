@@ -123,7 +123,6 @@ Week of February 28
   * `PyMongo Documentation <http://api.mongodb.com/python/current/index.html>`_
   * `jQuery Documentation <http://api.jquery.com>`_
 
-
 Someday Maybe
 ~~~~~~~~~~~~~
 
