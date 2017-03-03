@@ -39,7 +39,7 @@ class ExpenseDB {
         var waitfor = new $.Deferred();
         var self = this;
         $.ajax({
-            url: "http://www.runestone.academy:8001/api/v1/expenses"
+            url: "http://localhost:8088/api/v1/expenses"
         }).done(function(data) {
             for(let e of data) {
                 e = new Expense(e.date, e.store, e.category, e.item, e.amount);
@@ -56,8 +56,9 @@ class ExpenseDB {
         $.ajax({
             url: "http://localhost:8088/api/v1/expenses",
             method: 'POST',
-            crossDomain: true,
-            data: JSON.stringify(e)
-        }).done(function(data) {alert(data)});
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(e),
+            dataType: "json",
+        }).done(function() {$("#expensetable").trigger("edbupdate")}).fail(function() {alert("Could not save your expense.....")});
     }
 }
