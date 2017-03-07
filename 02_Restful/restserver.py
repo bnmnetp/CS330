@@ -10,16 +10,16 @@ mongo = PyMongo(app)
 
 @app.route('/api/v1/expenses', methods=['GET'])
 def get_expenses(expense_id=None):
-        if expense_id == None:
-            edb = mongo.db.expenses
-            #res = edb.find_one({'store': 'fareway'})
-            explist = list(edb.find())
-            res = Response(dumps(explist))
-            res.headers['Access-Control-Allow-Origin'] = '*'
-            res.headers['Content-type'] = 'application/json'
-            return  res
-        else:
-            return {'hello': 'world {}'.format(expense_id)}
+    if expense_id == None:
+        edb = mongo.db.expenses
+        #res = edb.find_one({'store': 'fareway'})
+        explist = list(edb.find())
+        res = Response(dumps(explist))
+        res.headers['Access-Control-Allow-Origin'] = '*'
+        res.headers['Content-type'] = 'application/json'
+        return  res
+    else:
+        return {'hello': 'world {}'.format(expense_id)}
 
 
 @app.route('/api/v1/expenses', methods=['POST'])
@@ -37,7 +37,7 @@ def save_expense():
 @app.route('/api/v1/expenses/<string:expid>', methods=['DELETE'])
 def remove_expense(expid):
     edb = mongo.db.expenses
-    res = edb.delete_one({'_id': ObjectId(f'{expid}')})
+    res = edb.delete_one({'_id': ObjectId(expid)})
     return dumps({'deleted_count':res.deleted_count})
 
 
