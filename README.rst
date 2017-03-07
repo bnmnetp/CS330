@@ -139,7 +139,7 @@ Week of March 7
 **For Next Tuesday**
 
 * Modify your interface so that clicking on a heading causes the table to be sorted by that column.  You will need to look at the Array sorting method of Javascript to see how to do a custom sort.
-* Add a search box that will allow you to search your expenses and only display the expenses that match the text in the box.  -- You do not need to change the server for this.
+* Add a search box that will allow you to search your expenses and only display the expenses that match the text in the box.  -- You do not need to change the server for this.  Searching will search category, store, item and date.  Dates are stored as strings so they will be easy to search too.  Hint:  *A good design might think about adding a match method to the Expense object.*
 * Devise an interface that will allow you to edit an expense.  After editing the expense should be saved on the server using the PUT method along with the expense id.   `http://localhost/api/v1/expenses/3243ba323b33c2ed`
 
 Someday Maybe
