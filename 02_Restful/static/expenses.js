@@ -1,21 +1,38 @@
 "use strict"
 class Expense {
-    constructor(date, store, category, item, amount) {
-        this.date = date
-        this.store = store
-        this.category = category
-        this.item = item
-        this.amount = parseFloat(amount)
+    constructor(date, store, category, item, amount, id) {
+        this.date = date;
+        this.store = store;
+        this.category = category;
+        this.item = item;
+        this.amount = parseFloat(amount);
+        if (id !== undefined) {
+            this.id = id;
+        }
     }
 
-    toTableRow() {
+    toTableRow(deletecb) {
+        let exp_fmt = new Intl.NumberFormat('en-US',
+                        { style: 'currency', currency: 'USD',
+                          minimumFractionDigits: 2 });
         var row = document.createElement('tr')
         var dt, st, cat, item, amt;
         for (let cell of ['date', 'store', 'category', 'item', 'amount']) {
             let td = document.createElement('td');
-            td.innerHTML = this[cell]
+            if (cell == 'amount') {
+                td.innerHTML = exp_fmt.format(this[cell])
+            } else {
+                td.innerHTML = this[cell]
+            }
             row.appendChild(td)
         }
+        let td = document.createElement('td')
+        let butt = document.createElement('button')
+        butt.id = this.id;
+        butt.innerHTML = 'Delete';
+        butt.onclick = function() {ec.deleteExpense(this.id); };
+        td.appendChild(butt);
+        row.appendChild(td);
         return row
     }
 }
@@ -35,6 +52,24 @@ class ExpenseDB {
         return this.allExpenses;
     }
 
+    deleteExpense(id) {
+        let done = false;
+        let i;
+        for (i = 0; i < this.allExpenses.length && !done; i++) {
+            if (this.allExpenses[i].id == id) {
+                done = true;
+            }
+        }
+        if (done) {
+            this.allExpenses.splice(i-1,1);
+            $.ajax({
+                url: `http://localhost:8088/api/v1/expenses/${id}`,
+                method: 'DELETE',
+            }).done(function(data) {console.log('deleted')} );
+            $("#expensetable").trigger("edbupdate")
+        }
+    }
+
     reloadMe() {
         var waitfor = new $.Deferred();
         var self = this;
@@ -42,7 +77,7 @@ class ExpenseDB {
             url: "http://localhost:8088/api/v1/expenses"
         }).done(function(data) {
             for(let e of data) {
-                e = new Expense(e.date, e.store, e.category, e.item, e.amount);
+                e = new Expense(e.date, e.store, e.category, e.item, e.amount, e._id["$oid"]);
                 self.allExpenses.push(e);
             }
             //waitfor.resolve()
@@ -59,6 +94,9 @@ class ExpenseDB {
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(e),
             dataType: "json",
-        }).done(function() {$("#expensetable").trigger("edbupdate")}).fail(function() {alert("Could not save your expense.....")});
+        }).done(function(data) {
+            e.id = data._id["$oid"]
+            $("#expensetable").trigger("edbupdate");
+            }).fail(function() {alert("Could not save your expense.....")});
     }
 }

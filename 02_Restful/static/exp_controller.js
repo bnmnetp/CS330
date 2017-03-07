@@ -18,7 +18,9 @@ class ExpenseController {
             table.appendChild(e.toTableRow());
             total += e.amount
         }
-
+        let total_fmt = new Intl.NumberFormat('en-US',
+                        { style: 'currency', currency: 'USD',
+                          minimumFractionDigits: 2 });
         // add total row
         let row = document.createElement('tr')
         for(let i = 0; i < 5; i++) {
@@ -27,7 +29,7 @@ class ExpenseController {
             if(i == 3) {
                 td.innerHTML = "<strong>Total</strong>";
             } else if (i == 4) {
-                td.innerHTML = `<strong> ${total.toString()}</strong>`;
+                td.innerHTML = `<strong> ${total_fmt.format(total)}</strong>`;
             }
         }
 
@@ -44,10 +46,14 @@ class ExpenseController {
             document.getElementById('inputamount').value);
 
         this.edb.newExpense(e);
-        this.redrawTable();
+        //this.redrawTable();
     }
 
     updateTable() {
+    }
+
+    deleteExpense(id) {
+        this.edb.deleteExpense(id);
     }
 
     filterby() {
@@ -56,17 +62,12 @@ class ExpenseController {
 
     doReload() {
         var waitfor = this.edb.reloadMe();
-        // let xhr = new XMLHttpRequest();
-        // xhr.open('GET','http://localhost:5000/api/v1/expenses', true);
-        // xhr.send(null);
-        // xhr.onload = function() {
-        //     console.log('done')
-        //     console.log(this.responseText)
-        // }
+        $("#expensetable").on("edbupdate", this.redrawTable.bind(this));  // every time an edbupdate event happens, call redrawTable
+
+        // Using a custom event is an alternative to the Promise mechanism.
         // waitfor.done( (function() {
         //     this.redrawTable();
         // }).bind(this) );
-        $("#expensetable").on("edbupdate", this.redrawTable.bind(this));
     }
 
 }
