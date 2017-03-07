@@ -66,7 +66,7 @@ class ExpenseDB {
                 url: `http://localhost:8088/api/v1/expenses/${id}`,
                 method: 'DELETE',
             }).done(function(data) {console.log('deleted')} );
-            $("#expensetable").trigger("edbupdate")
+            $("#expensetable").trigger("edbupdate") // trigger edbupdate event to cause table refresh
         }
     }
 
@@ -81,7 +81,7 @@ class ExpenseDB {
                 self.allExpenses.push(e);
             }
             //waitfor.resolve()
-            $("#expensetable").trigger("edbupdate")
+            $("#expensetable").trigger("edbupdate") // trigger edbupdate event to cause table refresh
         });
         return waitfor;
     }
@@ -96,7 +96,7 @@ class ExpenseDB {
             dataType: "json",
         }).done(function(data) {
             e.id = data._id["$oid"]
-            $("#expensetable").trigger("edbupdate");
+            $("#expensetable").trigger("edbupdate"); // trigger edbupdate event to cause table refresh
             }).fail(function() {alert("Could not save your expense.....")});
     }
 }
