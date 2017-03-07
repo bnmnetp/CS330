@@ -124,6 +124,24 @@ Week of February 28
   * `jQuery Documentation <http://api.jquery.com>`_
 
 
+Week of March 7
+~~~~~~~~~~~~~~~
+
+* Tuesday
+
+  * API Review
+  * Routing Review
+  * implementing the delete method
+
+* Thursday
+  * No Class -- But you can work on your project...
+
+**For Next Tuesday**
+
+* Modify your interface so that clicking on a heading causes the table to be sorted by that column.  You will need to look at the Array sorting method of Javascript to see how to do a custom sort.
+* Add a search box that will allow you to search your expenses and only display the expenses that match the text in the box.  -- You do not need to change the server for this.
+* Devise an interface that will allow you to edit an expense.  After editing the expense should be saved on the server using the PUT method along with the expense id.   `http://localhost/api/v1/expenses/3243ba323b33c2ed`
+
 Someday Maybe
 ~~~~~~~~~~~~~
 
