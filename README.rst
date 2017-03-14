@@ -143,6 +143,22 @@ Week of March 7
 * Devise an interface that will allow you to edit an expense.  After editing the expense should be saved on the server using the PUT method along with the expense id.   `http://localhost/api/v1/expenses/3243ba323b33c2ed`
 * You will turn this project in by making a zip or tar file of your entire folder and uploading the archived folder to katie.
 
+
+Week of March 14
+~~~~~~~~~~~~~~~~
+
+* Mashups and Web APIs
+
+  * https://github.com/toddmotto/public-apis#currency-exchange
+  * https://www.programmableweb.com/apis/directory
+
+  * Accessing a web api from Javascript
+  * Accessing a web api from Python with requests
+
+* Cross Origin Security
+
+* Writing a proxy to avoid cross origin Problems
+
 Someday Maybe
 ~~~~~~~~~~~~~
 
