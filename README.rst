@@ -183,15 +183,22 @@ Week of April 25
 
 * A Scrapy project
 * Finishing the ACR project
-* Final Projects
+
+  - B-Level
+  
+    * Allow the user to search for a course by partial name and show the requirements it satisfies
+    * Allow the user to search for a requirement and show the courses that satisfy that requirement  
+    
+  - A-Level
+  
+    * Allow the user to search for multiple requirements and show the courses that satisfy all of them.
+    * On the home page show the top 5 courses that satisfy the **most** requirements
+  
 
 Resources
 
 * `Scrapy Tutorial<https://doc.scrapy.org/en/latest/intro/tutorial.html>`_
 * `Scraping a list of government data sets<https://catalog.data.gov/dataset?groups=education2168#topic=education_navigation>`_
-
-  * Output should be a json file with the following keys:  title, recent_views, and link -- which provides a link to a csv file if available.
-  * You can follow 
 
 
 Week of May 2
@@ -201,6 +208,7 @@ Week of May 2
 * [Deploying with Git | Heroku Dev Center](https://devcenter.heroku.com/articles/git)
 * [Upgrading Heroku Postgres Databases | Heroku Dev Center](https://devcenter.heroku.com/articles/upgrading-heroku-postgres-databases)  
 
+  
 
 Someday Maybe
 ~~~~~~~~~~~~~
