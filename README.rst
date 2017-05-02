@@ -159,6 +159,49 @@ Week of March 14
 
 * Writing a proxy to avoid cross origin Problems
 
+Week of April 11
+~~~~~~~~~~~~~~~~
+
+* Introduce the All College Requirements Project
+* DBAPI Exercise
+* Templates (Jinja2)
+
+Resources
+
+* `Flask Mega Tutorial<https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world>`_
+* DBAPI -- `psycopg2 docs<http://initd.org/psycopg/docs/>`_
+
+Week of April 18
+~~~~~~~~~~~~~~~~
+
+* SSH Tunnelling for fun and profit
+* Introducing Scrapy
+* Data Model creation with DDL and populating the All College Requirements Data
+
+Week of April 25
+~~~~~~~~~~~~~~~~
+
+* A Scrapy project
+* Finishing the ACR project
+* Final Projects
+
+Resources
+
+* `Scrapy Tutorial<https://doc.scrapy.org/en/latest/intro/tutorial.html>`_
+* `Scraping a list of government data sets<https://catalog.data.gov/dataset?groups=education2168#topic=education_navigation>`_
+
+  * Output should be a json file with the following keys:  title, recent_views, and link -- which provides a link to a csv file if available.
+  * You can follow 
+
+
+Week of May 2
+~~~~~~~~~~~~~
+
+* [Getting Started on Heroku with Python | Heroku Dev Center](https://devcenter.heroku.com/articles/getting-started-with-python#set-up)   Uses Django, but still somewhat useful.
+* [Deploying with Git | Heroku Dev Center](https://devcenter.heroku.com/articles/git)
+* [Upgrading Heroku Postgres Databases | Heroku Dev Center](https://devcenter.heroku.com/articles/upgrading-heroku-postgres-databases)  
+
+
 Someday Maybe
 ~~~~~~~~~~~~~
 
