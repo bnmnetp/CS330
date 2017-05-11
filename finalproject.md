@@ -31,4 +31,3 @@ To earn an A on the project you will need to go further.
 
 You may work in teams of 2 on this project, unless you are doing the blogging application.
 
-This project will be due during finals week, we will set up an appointment for you to demonstrate and explain the project to me. In addition your project should be publicly available.
