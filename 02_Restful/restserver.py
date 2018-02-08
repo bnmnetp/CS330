@@ -4,9 +4,11 @@ from flask_pymongo import PyMongo
 from flask import jsonify
 from bson.json_util import dumps
 from bson.objectid import ObjectId
+from flask_cors import CORS
 
 app = Flask(__name__)
 mongo = PyMongo(app)
+cors = CORS(app)
 
 @app.route('/api/v1/expenses', methods=['GET'])
 def get_expenses(expense_id=None):
@@ -42,7 +44,7 @@ def remove_expense(expid):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=8088)
+    app.run(debug=True, host="0.0.0.0", port=8001)
 
 # GET
 # /api/v1/expenses  -- return all Expenses

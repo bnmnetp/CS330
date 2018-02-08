@@ -61,12 +61,14 @@ class ExpenseController {
     }
 
     doReload() {
+        console.log("calling reloadMe")
         var waitfor = this.edb.reloadMe();
         $("#expensetable").on("edbupdate", this.redrawTable.bind(this));  // every time an edbupdate event happens, call redrawTable
-
+        console.log("back")
         // Using a custom event is an alternative to the Promise mechanism.
         // waitfor.done( (function() {
-        //     this.redrawTable();
+        //      console.log("ready to redraw table")
+        //      this.redrawTable();
         // }).bind(this) );
     }
 
@@ -74,6 +76,6 @@ class ExpenseController {
 
 var ec = new ExpenseController();
 
-window.onload = function() {
+$(document).ready(function() {
     ec.doReload();
-}
+});

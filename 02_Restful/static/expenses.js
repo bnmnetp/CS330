@@ -63,7 +63,7 @@ class ExpenseDB {
         if (done) {
             this.allExpenses.splice(i-1,1);
             $.ajax({
-                url: `http://localhost:8088/api/v1/expenses/${id}`,
+                url: `http://knuth.luther.edu:8001/api/v1/expenses/${id}`,
                 method: 'DELETE',
             }).done(function(data) {console.log('deleted')} );
             $("#expensetable").trigger("edbupdate") // trigger edbupdate event to cause table refresh
@@ -74,12 +74,13 @@ class ExpenseDB {
         var waitfor = new $.Deferred();
         var self = this;
         $.ajax({
-            url: "http://localhost:8088/api/v1/expenses"
+            url: "http://knuth.luther.edu:8001/api/v1/expenses"
         }).done(function(data) {
             for(let e of data) {
                 e = new Expense(e.date, e.store, e.category, e.item, e.amount, e._id["$oid"]);
                 self.allExpenses.push(e);
             }
+            console.log("resolving waitfor");
             //waitfor.resolve()
             $("#expensetable").trigger("edbupdate") // trigger edbupdate event to cause table refresh
         });
@@ -89,7 +90,7 @@ class ExpenseDB {
     saveMe(e) {
         //localStorage.expensedb = JSON.stringify(this.allExpenses);
         $.ajax({
-            url: "http://localhost:8088/api/v1/expenses",
+            url: "http://knuth.luther.edu:8001/api/v1/expenses",
             method: 'POST',
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(e),
