@@ -1,7 +1,7 @@
 CS-330 Internet Programming
 ===========================
 
-* Office Hours: 2:00 -- 3:00 Daily.  By Appointment, `Use my Calendar <https://calendar.google.com/calendar/embed?mode=WEEK&src=millbr02%40luther.edu&ctz=America/Chicago>`_  Do not email me to ask when I can meet, use the calendar.
+* Office Hours: 9:30 -- 10:30 Tues, Wed, Thurs.  By Appointment, `Use my Calendar <https://calendar.google.com/calendar/embed?mode=WEEK&src=millbr02%40luther.edu&ctz=America/Chicago>`_  Do not email me to ask when I can meet, use the calendar.
 * Slack Channel:  I'll use this to post hints and screen captures of notes.  Using your norsekey `signup for slack <https://luthercs.slack.com/signup>`_ Then join the internetprogramming channel
 
 Getting your environment set up
@@ -13,9 +13,9 @@ It is important that you are comfortable working from the command line in this c
 * Codecademy: `Git Basics <https://www.codecademy.com/learn/learn-git>`_
 * Tower: `Learn Version control with Git <https://www.git-tower.com/learn/git/ebook>`_ Is an excellent overview also.
 
-Because we will be installing a lot of third party packages, and because a big part of web programming involves using and installing 3rd party packages you will each create your own installation of Ubuntu Linux.  This is a very common development environment as well as a common environment for deploying production ready web apps.
+Because we will be installing a lot of third party packages, and because a big part of web programming involves using and installing 3rd party packages you will each need your own installation of Ubuntu Linux.  This is a very common development environment as well as a common environment for deploying production ready web apps.
 
-* Kent has written up a nice set of instructions for `installing Ubuntu <http://knuth.luther.edu/~leekent/stories/installing-linux-in-our-lab.html>`_
+* Kent has written up a nice set of instructions for `installing Ubuntu <http://knuth.luther.edu/~leekent/stories/installing-linux-in-our-lab.html>`_  He also has a `video here <http://cs.luther.edu/~leekent/InstallingLinux.mp4>`_
 
 
 Unit 1 - Javascript Fundamentals
@@ -23,239 +23,15 @@ Unit 1 - Javascript Fundamentals
 
 Most of you have only had a small taste of Javascript in CS-130.  Here we'll compare Javascript to Python highligting the key differences and main features of Javascript for programming in the browser.
 
-Week of February 2
+Week of February 8
 ~~~~~~~~~~~~~~~~~~
 
 * Thursday
 
   - Admin
   - The Web Programming Architecture
-  - Javascript `Pretest <http://interactivepython.org/runestone/static/JS4Python/pretest.html>`_ 30 minutes
+  - Javascript `Pretest <https://runestone.academy/runestone/static/JS4Python/pretest.html>`_ 30 minutes
   - Javascript Syntax and basic structures
-  - For Tuesday Read `Javascript for Python Programmers Part I <http://interactivepython.org/runestone/static/JS4Python/TheBasics/JS4Python.html>`_  and Do practice exercises 1, 3, and 5
+  - For Tuesday Read `Javascript for Python Programmers Part I <https://runestone.academy/runestone/static/JS4Python/TheBasics/JS4Python.html>`_  and Do practice exercises 1, 3, and 5
 
 
-Week of February 7
-~~~~~~~~~~~~~~~~~~
-
-* Tuesday
-
-  - Javascript Data types and Examples
-  - For Thursday Read Javascript for Python Programmers Part II
-  - For Thursday, if you did not complete practice exercises 3 and 5 finish them by Thursday.
-
-* Thursday
-  - Writing classes in Javascript
-  - The document Object Model
-  - Javascript Events and event driven programming
-
-**For Tuesday**
-
-* Do practice Exercise classes_3  -- Implement a stack class
-* Create a web page that has a button on it.  Each time the button is pressed the next prime number should be displayed on the page along with the button.  The prime number should be displayed in an h1 with the id of 'nextprime' and the button should have an id of 'primebutton'.  This web page should be public in your account on knuth.luther.edu and I should be able to access the page using ``http://knuth.luther.edu/~youruser/buttontest.html``
-
-Week of February 14
-~~~~~~~~~~~~~~~~~~~
-
-* Tuesday
-  - Javascript Quiz - 30 mins on Javascript basics and classes
-  - Creating an Expense tracking web application
-  - Web API's
-
-* Thursday
-  - Check your grade on the quiz
-  - Check your registration on interactivepython.org  -- Need to be in JS4Python
-  - Expense Tracking SPA
-  - Bootstrap
-  - jQuery
-
-Week of February 21
-~~~~~~~~~~~~~~~~~~~
-
-* Tuesday
-
-  - Automated Testing with Selenium
-  - Common Problems / Debugging
-    - Submit buttons
-    - static versus non-static functions and properties
-  - JSON - Javascript Object Notation
-  - Expense Tracking
-    - localStorage - save
-    - localStorage - restore
-    - filtering the list by category
-    - sorting
-  - An expense API
-  - XMLHTTP Request Objects
-
-**Assignment**
-
-* By class on thursday your page should save and restore your entered expenses.  Make sure that you have the latest deployed on knuth under expenses.html
-
-* Thursday
-
-  - filtering the list by category
-  - sorting
-
-
-* Resources / Readings
-  - `Introduction to JSON <https://www.w3schools.com/js/js_json_intro.asp>`_
-
-
-Week of February 28
-~~~~~~~~~~~~~~~~~~~
-
-* Thursday
-  - Finishing jQuery interface to our server
-  - Flask -- Hello world
-  - Getting the restserver.py program running
-  - re-implementing the saveMe
-
-**For Tuesday**
-  - Add a checkbox, or button to each expense that will allow you to delete an expense.
-  - Add a method to restserver.py that will handle the DELETE request.
-  - You will almost certainly need to check the PyMongo and/or jQuery documentation
-
-* Readings and Resources
-
-  * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
-  * `Another Intro <http://www.tutorialspoint.com/http/index.htm>`_
-  * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
-  * `PyMongo Documentation <http://api.mongodb.com/python/current/index.html>`_
-  * `jQuery Documentation <http://api.jquery.com>`_
-
-
-Week of March 7
-~~~~~~~~~~~~~~~
-
-* Tuesday
-
-  * API Review
-  * Routing Review
-  * implementing the delete method
-
-* Thursday
-  * No Class -- But you can work on your project...
-
-**For Next Tuesday**
-
-* Modify your interface so that clicking on a heading causes the table to be sorted by that column.  You will need to look at the Array sorting method of Javascript to see how to do a custom sort.
-* Add a search box that will allow you to search your expenses and only display the expenses that match the text in the box.  -- You do not need to change the server for this.  Searching will search category, store, item and date.  Dates are stored as strings so they will be easy to search too.  Hint:  *A good design might think about adding a match method to the Expense object.*
-* Devise an interface that will allow you to edit an expense.  After editing the expense should be saved on the server using the PUT method along with the expense id.   `http://localhost/api/v1/expenses/3243ba323b33c2ed`
-* You will turn this project in by making a zip or tar file of your entire folder and uploading the archived folder to katie.
-
-
-Week of March 14
-~~~~~~~~~~~~~~~~
-
-* Mashups and Web APIs
-
-  * https://github.com/toddmotto/public-apis#currency-exchange
-  * https://www.programmableweb.com/apis/directory
-
-  * Accessing a web api from Javascript
-  * Accessing a web api from Python with requests
-
-* Cross Origin Security
-
-* Writing a proxy to avoid cross origin Problems
-
-Week of April 11
-~~~~~~~~~~~~~~~~
-
-* Introduce the All College Requirements Project
-* DBAPI Exercise
-* Templates (Jinja2)
-
-Resources
-
-* `Flask Mega Tutorial<https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world>`_
-* DBAPI -- `psycopg2 docs<http://initd.org/psycopg/docs/>`_
-
-Week of April 18
-~~~~~~~~~~~~~~~~
-
-* SSH Tunnelling for fun and profit
-* Introducing Scrapy
-* Data Model creation with DDL and populating the All College Requirements Data
-
-Week of April 25
-~~~~~~~~~~~~~~~~
-
-* A Scrapy project
-* Finishing the ACR project
-
-  - B-Level
-  
-    * Allow the user to search for a course by partial name and show the requirements it satisfies
-    * Allow the user to search for a requirement and show the courses that satisfy that requirement  
-    
-  - A-Level
-  
-    * Allow the user to search for multiple requirements and show the courses that satisfy all of them.
-    * On the home page show the top 5 courses that satisfy the **most** requirements
-  
-
-Resources
-
-* `Scrapy Tutorial<https://doc.scrapy.org/en/latest/intro/tutorial.html>`_
-* `Scraping a list of government data sets<https://catalog.data.gov/dataset?groups=education2168#topic=education_navigation>`_
-
-
-Week of May 2
-~~~~~~~~~~~~~
-
-* [Getting Started on Heroku with Python | Heroku Dev Center](https://devcenter.heroku.com/articles/getting-started-with-python#set-up)   Uses Django, but still somewhat useful.
-* [Deploying with Git | Heroku Dev Center](https://devcenter.heroku.com/articles/git)
-* [Upgrading Heroku Postgres Databases | Heroku Dev Center](https://devcenter.heroku.com/articles/upgrading-heroku-postgres-databases)  
-
-  
-
-Someday Maybe
-~~~~~~~~~~~~~
-
-    * Tuesday  -  Introduction to CGI Programming
-
-        * A Hello World Example
-        * Parameters and Interprocess communication
-        * Readings
-
-           * `Server Side Intro <http://interactivepython.org/runestone/static/webfundamentals/CGI/basiccgi.html>`_
-           * `User Input <http://interactivepython.org/runestone/static/webfundamentals/CGI/forms.html>`_
-           * `W3Schools Forms <http://www.w3schools.com/html/html_forms.asp>`_
-    * Thursday - Extending our webserver to support CGI programming
-
-        * Forms and Form Processing
-        * The olld todo app as a server side program
-
-
-
-* Tuesday
-  - Get Linux environments installed and configured
-  Configure Network for 'Bridged Mode' so we can access server
-  Test the echoServer3.py and echoclient3.py programs with a partner
-
-* Thursday
-  - Look at Multithreading and Multi-process models of the echo server
-
-  * See echoServerMT.py and echoServerMP.py
-  * Demonstrate a simple python webserver
-  * start to write our own webserver based on echoServerXX.py
-  * Quiz on the readings
-
-* Readings
-
-  * `Networking Basics <http://www.bogotobogo.com/cplusplus/sockets_server_client.php>`_
-  * `A Simple Client/Server <http://www.bogotobogo.com/python/python_network_programming_server_client.php>`_
-
-* Week of March
-
-    * Tuesday - Database Access
-
-        * Using SqlAlchemy
-        * A server side Todo Program
-
-    * Thursday - No Class
-
-    * Readings
-
-        * [SQLAlchemy Tutorial](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html)
