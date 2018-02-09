@@ -49,8 +49,8 @@ Week of February 8
 
   - Admin
   - The Web Programming Architecture
-  - Javascript `Pretest <https://runestone.academy/runestone/static/JS4Python/pretest.html>`_ 30 minutes
+  - Javascript `Pretest <https://runestone.academy/runestone/static/JS4Python/TheBasics/pretest.html>`_ 30 minutes
   - Javascript Syntax and basic structures
-  - For Tuesday Feb 13, Read `Javascript for Python Programmers Part I <https://runestone.academy/runestone/static/JS4Python/TheBasics/JS4Python.html>`_  and Do Practice Problems 1 (jsbasics_1), 3 (jsbasic_3), and 5 (jsbasic_5)
+  - For Tuesday Feb 13, Read `Javascript for Python Programmers Part I <https://runestone.academy/runestone/static/JS4Python/TheBasics/toctree.html>`_  and Do Practice Problems 1 (jsbasics_1), 3 (jsbasic_3), and 5 (jsbasic_5)
 
 
