@@ -27,9 +27,8 @@ Week of February 13
 ~~~~~~~~~~~~~~~~~~~
 
 * Tuesday
-
-	- Javascript Data types and Examples
-	- For Thursday Read Javascript for Python Programmers Part II
+  - Javascript Data types and Examples
+  - For Thursday Read Javascript for Python Programmers Part II
 
 * Thursday
 	- Writing classes in Javascript
