@@ -10,3 +10,6 @@
 __pycache__
 12_Vue/vueapp01/*
 .vscode
+07_scraper/gened/*
+gened
+TestScripts
