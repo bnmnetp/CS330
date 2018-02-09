@@ -8,4 +8,5 @@
 *.db
 .idea
 __pycache__
-
+12_Vue/vueapp01/*
+.vscode
