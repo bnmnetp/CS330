@@ -38,7 +38,6 @@ Week of February 13
 **For Tuesday Feb 20**
 
 * Do practice Exercise classes_3  -- Implement a stack class
-* Create a web page that has a button on it.  Each time the button is pressed the next prime number should be displayed on the page along with the button.  The prime number should be displayed in an h1 with the id of 'nextprime' and the button should have an id of 'primebutton'.  This web page should be public in your account on knuth.luther.edu and I should be able to access the page using ``http://knuth.luther.edu/~youruser/buttontest.html``
 
 
 Week of February 8
