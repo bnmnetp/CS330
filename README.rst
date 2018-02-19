@@ -21,10 +21,25 @@ Because we will be installing a lot of third party packages, and because a big p
 Unit 1 - Javascript Fundamentals
 --------------------------------
 
-Most of you have only had a small taste of Javascript in CS-130.  Here we'll compare Javascript to Python highligting the key differences and main features of Javascript for programming in the browser.
+Week of February 20
+~~~~~~~~~~~~~~~~~~~
+
+* Tuesday
+
+	- The document Object Model
+	- Javascript Events and event driven programming
+  - Finish up the prime number table
+
+* Thursday
+  - For thursday: Create a web page that has a button on it.  Each time the button is pressed the next prime number should be displayed on the page along with the button.  The prime number should be displayed in an h1 with the id of'nextprime' and the button should have an id of 'primebutton'.  This web page should be public in your account on knuth.luther.edu and I should be able to access the page using ``http://knuth.luther.edu/~youruser/buttontest.html``
+  - Unit testing
+  - Writing unit tests for the stack class
+
 
 Week of February 13
 ~~~~~~~~~~~~~~~~~~~
+
+Most of you have only had a small taste of Javascript in CS-130.  Here we'll compare Javascript to Python highligting the key differences and main features of Javascript for programming in the browser.
 
 * Tuesday
   - Javascript Data types and Examples
@@ -32,8 +47,6 @@ Week of February 13
 
 * Thursday
 	- Writing classes in Javascript
-	- The document Object Model
-	- Javascript Events and event driven programming
 
 **For Tuesday Feb 20**
 
