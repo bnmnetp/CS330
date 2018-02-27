@@ -31,6 +31,9 @@ Week of February 20
   - Finish up the prime number table
 
 * Thursday
+  - Admin
+  - The Web Programming Architecture
+  - Review of DOM
   - For thursday: Create a web page that has a button on it.  Each time the button is pressed the next prime number should be displayed on the page along with the button.  The prime number should be displayed in an h1 with the id of'nextprime' and the button should have an id of 'primebutton'.  This web page should be public in your account on knuth.luther.edu and I should be able to access the page using ``http://knuth.luther.edu/~youruser/buttontest.html``
   - Unit testing
   - Writing unit tests for the stack class
@@ -46,6 +49,48 @@ Most of you have only had a small taste of Javascript in CS-130.  Here we'll com
   - For Thursday Read Javascript for Python Programmers Part II
 
 * Thursday
+  - Javascript Quiz 1
+
+
+Unit 2 - Networking Basics
+--------------------------
+
+The goals of this first unit are to understand a bit about Network programming, as this forms the basis for how the web server and the browser communicate with each other.
+
+* Week of February 7
+
+    * Tuesday - Get Linux environments installed and configured
+
+        * Configure Network for 'Bridged Mode' so we can access server
+        * Test the echoServer3.py and echoclient3.py programs with a partner
+
+    * Thursday - Look at Multithreading and Multi-process models of the echo server
+
+        * See echoServerMT.py and echoServerMP.py
+        * Demonstrate a simple python webserver
+        * start to write our own webserver based on echoServerXX.py
+
+    * Readings
+
+        * `Networking Basics <http://www.bogotobogo.com/cplusplus/sockets_server_client.php>`_
+        * `A Simple Client/Server <http://www.bogotobogo.com/python/python_network_programming_server_client.php>`_
+
+
+
+* Week of February 14
+
+    * Tuesday  - Chat server with asyncio
+
+    * Thursday - A multithreaded web server
+
+    * Readings
+
+        * `Intro to HTTP <http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177>`_
+        * `Another Intro <http://www.tutorialspoint.com/http/index.htm>`_
+        * `Build your own server <https://ruslanspivak.com/lsbaws-part1/>`_
+
+* Week of February 20
+
 	- Writing classes in Javascript
 
 **For Tuesday Feb 20**
