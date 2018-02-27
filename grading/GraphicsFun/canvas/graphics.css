@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+    padding: 0;
+    text-align: center;
+	background-color: #000000;
+}
+
+.center_box {
+	margin:0 auto; 
+	text-align: left;
+    width: 600px;
+	height: 600px;
+	overflow:hidden;
+}

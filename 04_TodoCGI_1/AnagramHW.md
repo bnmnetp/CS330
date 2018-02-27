@@ -22,3 +22,4 @@ Or, you can look at `itertools.permutations`
 2.  Given a large dictionary of words, and a starting word, find all of the words in the dictionary that are anagrams Of the starting word.  [See here for anagram detection algorithms](http://interactivepython.org/runestone/static/pythonds/AlgorithmAnalysis/AnAnagramDetectionExample.html)
 
 You should do this as a CGI script, in a single Python file.  Make the path to the dictionary you use easy to change by using a single constant at the start of your script.
+

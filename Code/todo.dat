@@ -1,0 +1,19 @@
+school:
+  1: 
+    task: do homework
+    due: tomorrow
+    priority: 1
+  2:
+    task: pay tuition
+    due: 5/5/2012
+    status: done
+
+home:
+  3:
+    task: feed the dog
+    due: 3/1/2012
+    priority: low
+
+test:
+
+done:

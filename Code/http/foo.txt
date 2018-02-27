@@ -1,0 +1,3 @@
+<open file 'foo.txt', mode 'w' at 0xb7ea54d0>
+<open file 'foo.txt', mode 'w' at 0xb7ea54d0>
+hello there

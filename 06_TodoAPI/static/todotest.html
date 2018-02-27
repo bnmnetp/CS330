@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo Test</title>
+</head>
+<body>
+<script type = "text/javascript">
+    function docheck () {
+        // PUT - /todo/<int:id>
+        // Create JSON - {'done' : true}
+        // xmlhttp.send(data)
+        //
+        if (this.checked) {
+            obj = new XMLHttpRequest();
+            obj.open("PUT", "/todo/" + this.id, true);
+            data = JSON.stringify({'done': true});
+            obj.setRequestHeader("Content-Type", "application/json");
+            obj.onreadystatechange = function () {
+                this.style.textDecoration = "strikethrough";
+            };
+            obj.send(data);
+        }
+    }
+    function showtodos () {
+        console.log("hello")
+        var obj = new XMLHttpRequest()
+        obj.open("GET","/todo",true)
+        obj.onreadystatechange = function() {
+            if (obj.readyState == 4 && obj.status == 200) {
+                tododb = JSON.parse(obj.responseText);
+                table = document.querySelector("#todolist");
+                for (i in tododb.tasklist) {
+                    tr = document.createElement("tr");
+                    col1 = document.createElement("td");
+                    check = document.createElement("input");
+                    check.type = "checkbox";
+                    check.id = tododb.tasklist[i].id;
+                    check.onclick = docheck;
+                    col1.appendChild(check);
+                    tr.appendChild(col1);
+                    col2 = document.createElement("td");
+                    col2.appendChild(document.createTextNode(tododb.tasklist[i].task));
+                    tr.appendChild(col2);
+                    col3 = document.createElement("td");
+                    col3.appendChild(document.createTextNode(tododb.tasklist[i].priority))
+                    tr.appendChild(col3)
+                    col4 = document.createElement("td");
+                    col4.appendChild(document.createTextNode(tododb.tasklist[i].due))
+                    tr.appendChild(col4)
+                    table.appendChild(tr);
+                }
+            }
+
+        };
+        obj.send()
+    }
+
+    function testpost() {
+        var obj = new XMLHttpRequest();
+        obj.open("POST", "/todo", true);
+        params = "id=1&done=true";
+        //obj.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        //obj.setRequestHeader("Content-type","multipart/form-data");
+        obj.setRequestHeader("Content-type","application/json");
+        obj.onreadystatechange = function() {
+            console.log(obj.readyState);
+        };
+        //form = new FormData()
+        //form.append('id','1')
+        //form.append('isdone','true')
+        //obj.send(form)
+        j = JSON.stringify({'id':1, 'isdone':false})
+        obj.send(j);
+
+    }
+</script>
+<button onclick="showtodos();">Show All Todo Items</button>
+
+<table id="todolist">
+</table>
+
+<button onclick="testpost();">Test POST</button>
+
+</body>
+</html>

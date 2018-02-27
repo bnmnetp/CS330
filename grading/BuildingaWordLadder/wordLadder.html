@@ -1,0 +1,29 @@
+<html>
+<head>
+
+	<script type="text/javascript" src="wordlist.js"></script>
+	<script type="text/javascript" src="classes.js"></script>
+	<script type="text/javascript" src="word.js"></script>
+	<script type="text/javascript" src="wordLadder.js"></script>
+
+</head>
+<body>
+  <div style="text-align: center;">
+    <h1> Word Ladders </h1>
+    <div style="width: 500px; text-align: left; margin-left: auto; margin-right:auto;">
+
+    </div>
+	  <form name= "wordladder" style="margin-left: auto; margin-right: auto; border: 1px solid black; text-align: center; width:250px; padding: 10px; background-color:#ffffc0;">
+		<br> Start:<input id="start" type="text" value="" size="20" style="width:200px;"/> <br/>
+		  <br> End:<input id="end" type="text" value="" size="20"  style="width:200px;"/> <br/>
+		  <div>
+	<field> <p> Select Word Length:</p> 
+	<button onclick="initialize('ask','tin')">3 Letter Test</button><br />
+	<button onclick="initialize('toll','mole')">4 Letter Test</button><br />
+	<button onclick="initialize('tazer','party')">5 Letter Test</button><br />
+	</field>
+	  </form>
+	  <p id="display"> </p>
+  </div>
+</body>
+</html>

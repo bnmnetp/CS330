@@ -1,0 +1,11 @@
+#container{
+	position: relative;
+}
+#mycanvas{
+	border-style:solid;
+	border-width:5px;
+}
+#mycanvas2{
+	border-style:solid;
+	border-width:5px;
+}

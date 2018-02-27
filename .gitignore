@@ -6,6 +6,8 @@
 *.synctex.gz
 *~
 *.db
+*.pyc
+__pycache__/
 .idea
 __pycache__
 12_Vue/vueapp01/*

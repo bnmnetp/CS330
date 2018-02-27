@@ -1,0 +1,25 @@
+1.  Write simple html file and use python3 -m http.server 8000  to serve the page
+2.  make cgi-bin directory
+3.  write a python program that creates a page  -- using print statements
+    * the program should live in the cgi-bin directory
+    * the program will need to send headers
+    * the program will need to send html strings
+    * Your python program will need to start with #!/usr/bin/python3  
+      - AND executable
+      - chmod +x foo.py
+
+4.  serve that page with python3 -m http.server 8000 --cgi
+
+
+Testing outside the browser
+
+nc localhost 8000
+GET /cgi-bin/hello.py HTTP/1.1
+Host: localhost
+
+Response from server here.....
+
+
+cd cgi-bin
+./hello.py
+

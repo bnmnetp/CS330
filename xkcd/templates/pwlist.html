@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}XKCD Password{% endblock %}
+
+{% block content %}
+<h1>Possible Passwords</h1>
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<table class="table table-striped table-condensed">
+{% for word in pwlist: %}
+    <tr>
+        <td> {{ word[0] }} </td>
+        <td> {{ word[1] }} </td>
+        <td> {{ word[2] }} </td>
+        <td> {{ word[3] }} </td>
+        <td> {{ word[4] }} </td>
+    </tr>
+{% endfor %}
+</table>
+</div>
+<div class="col-md-3"></div>
+{% endblock %}}
