@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    </head>
+    <body>
+        <h2>Recipe List</h2>
+        <ul id="mylist">
+        </ul>
+        <script type="text/javascript">
+            $.ajax({
+                method: "GET",
+                //url: "http://api.fixer.io/latest"
+                ///url: "http://livescore-api.com/api-client/users/pair.json?key=JIQSpERqkUfA8K4o&secret=fK3TB2KIDsMpcgWWYMOoqGOLB4mJOq84"
+                //url: "https://api.github.com/search/repositories?q=bnmnetp",  // /search/code?=runestone"
+                //url: "http://api.flickr.com/services/rest/?&method=flickr.people.getPublicPhotos&format=json&api_key=6f93d9bd5fef5831ec592f0b527fdeff&user_id=9395899@N08"
+                //url: "http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3w",
+                url: 'http://knuth.luther.edu:8001/proxy/mypuppy?i=garlic,onions&p=3w'
+                //url: 'http://localhost:8001/proxy/all/www.recipepuppy.com/api/?i=onions,garlic&p=3w'
+            }).done(function(data){
+                let mylist = document.getElementById('mylist');
+                for(let res of data.results) {
+                    let li = document.createElement('li')
+                    li.innerHTML = `<img src="${res.thumbnail}">` + res.title
+                    mylist.appendChild(li)
+                }
+            })
+        </script>
+    </body>
+</html>
+

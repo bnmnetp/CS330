@@ -8,4 +8,10 @@
 *.db
 *.pyc
 __pycache__/
-
+.idea
+__pycache__
+12_Vue/vueapp01/*
+.vscode
+07_scraper/gened/*
+gened
+TestScripts
