@@ -21,6 +21,18 @@ Because we will be installing a lot of third party packages, and because a big p
 Unit 1 - Javascript Fundamentals
 --------------------------------
 
+Week of February 27
+~~~~~~~~~~~~~~~~~~~
+
+* Tuesday/Thursday
+
+  - Initial user interface due by class on tuesday.  Only the add button needs to work.
+  - Look at Selenium unit tests for buttontest homework
+  - Review git basics and commit the initial shopping list app to git
+  - Model View Controller and first refactoring
+  - Using localStorage for saving tasks in the browser
+  
+
 Week of February 20
 ~~~~~~~~~~~~~~~~~~~
 
