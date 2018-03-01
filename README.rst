@@ -21,6 +21,17 @@ Because we will be installing a lot of third party packages, and because a big p
 Unit 1 - Javascript Fundamentals
 --------------------------------
 
+Week of March 6
+~~~~~~~~~~~~~~~
+
+**For Tuesday**  MVC Version of the shopping list with the following features working
+
+* MVC implementation
+* Working publish/subscribe interface between model and view
+* Clicking on a checkbox marks the item as purchased.  The row should now appear to be crossed out.  Optionally have the row dissapear after being crossed out for aobut 2 seconds.
+* 
+
+
 Week of February 27
 ~~~~~~~~~~~~~~~~~~~
 
