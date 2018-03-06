@@ -28,8 +28,13 @@ Week of March 6
 
 * MVC implementation
 * Working publish/subscribe interface between model and view
+* Review MVC and pub/sub models
+* Closures and Scopes in Javascript and events see https://runestone.academy/runestone/static/JS4Python/Advanced/closures.html
+* JSON and localStorage
+
+**For Thursday**
 * Clicking on a checkbox marks the item as purchased.  The row should now appear to be crossed out.  Optionally have the row dissapear after being crossed out for aobut 2 seconds.
-* 
+* If we get to localsStorage 
 
 
 Week of February 27
