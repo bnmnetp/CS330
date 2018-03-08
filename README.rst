@@ -21,6 +21,15 @@ Because we will be installing a lot of third party packages, and because a big p
 Unit 1 - Javascript Fundamentals
 --------------------------------
 
+Week of March 13
+~~~~~~~~~~~~~~~~
+
+**For Tuesday** Continue to enhance the shopping cart application by:
+
+* Adding a sort capability to your table -- clicking on the title of a column should cause your program to sort the list on that column.
+* Adding the use of localStorage to store and retrieve your list.  When the page loads you should access localStorage to restore your list.
+
+
 Week of March 6
 ~~~~~~~~~~~~~~~
 
