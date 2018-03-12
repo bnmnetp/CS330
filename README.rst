@@ -21,6 +21,31 @@ Because we will be installing a lot of third party packages, and because a big p
 Unit 1 - Javascript Fundamentals
 --------------------------------
 
+Week of March 13
+~~~~~~~~~~~~~~~~
+
+**For Tuesday** Continue to enhance the shopping cart application by:
+
+* Adding a sort capability to your table -- clicking on the title of a column should cause your program to sort the list on that column.
+* Adding the use of localStorage to store and retrieve your list.  When the page loads you should access localStorage to restore your list.
+
+
+Week of March 6
+~~~~~~~~~~~~~~~
+
+**For Tuesday**  MVC Version of the shopping list with the following features working
+
+* MVC implementation
+* Working publish/subscribe interface between model and view
+* Review MVC and pub/sub models
+* Closures and Scopes in Javascript and events see https://runestone.academy/runestone/static/JS4Python/Advanced/closures.html
+* JSON and localStorage
+
+**For Thursday**
+* Clicking on a checkbox marks the item as purchased.  The row should now appear to be crossed out.  Optionally have the row dissapear after being crossed out for aobut 2 seconds.
+* If we get to localsStorage 
+
+
 Week of February 27
 ~~~~~~~~~~~~~~~~~~~
 
