@@ -58,7 +58,8 @@ class Can extends Subject {
 let model =  new Can(10,2)
 
 function ochange(scope, msg) {
-    console.log(scope)
+//    console.log(scope)
+    console.log(scope.volume())
     console.log(msg)
 }
 
@@ -66,10 +67,10 @@ model.subscribe(ochange)
 
 
 
-let vt = new ViewThing(model)
+//let vt = new ViewThing(model)
 
 model.height = 20;
 model.height = 40;
 model.height = 1;
 
-console.log(JSON.stringify(model))
+//console.log(JSON.stringify(model))
