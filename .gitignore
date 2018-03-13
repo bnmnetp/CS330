@@ -16,3 +16,4 @@ __pycache__
 gened
 TestScripts
 node_modules/*
+package-lock.json
