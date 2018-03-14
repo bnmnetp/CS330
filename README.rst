@@ -21,6 +21,15 @@ Because we will be installing a lot of third party packages, and because a big p
 Unit 1 - Javascript Fundamentals
 --------------------------------
 
+Week of March 20
+~~~~~~~~~~~~~~~~
+
+**For Tuesday**
+
+  * Implement saving and restoring your todo list from a server
+  * Ideas for midterm mashup
+  * add one additional feature of your choice to the todo list
+  
 Week of March 13
 ~~~~~~~~~~~~~~~~
 
@@ -29,6 +38,16 @@ Week of March 13
 * Adding a sort capability to your table -- clicking on the title of a column should cause your program to sort the list on that column.
 * Adding the use of localStorage to store and retrieve your list.  When the page loads you should access localStorage to restore your list.
 
+* Tuesday
+
+  * XMLHttpRequest objects
+  * New fetch interface and Promises
+  * a simple Flask application
+
+* Thursday
+
+  * Passing data from client to server
+  * Using promises to build a remote adding machine
 
 Week of March 6
 ~~~~~~~~~~~~~~~
