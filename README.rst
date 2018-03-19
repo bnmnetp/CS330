@@ -21,15 +21,26 @@ Because we will be installing a lot of third party packages, and because a big p
 Unit 1 - Javascript Fundamentals
 --------------------------------
 
+Week of March 27
+~~~~~~~~~~~~~~~~
+
+* Enjoy Spring Break!
+
 Week of March 20
 ~~~~~~~~~~~~~~~~
 
-**For Tuesday**
+**For Thursday by 5pm**
 
   * Implement saving and restoring your todo list from a server
   * Ideas for midterm mashup
   * add one additional feature of your choice to the todo list
-  
+
+**Tuesday**
+
+* Deploying the server to pythonanywhere
+* Virtual environments
+* Discussion of midterm mashups (not due until after break)
+
 Week of March 13
 ~~~~~~~~~~~~~~~~
 
@@ -75,7 +86,16 @@ Week of February 27
   - Review git basics and commit the initial shopping list app to git
   - Model View Controller and first refactoring
   - Using localStorage for saving tasks in the browser
-  
+
+* Thursday
+
+  - Introduce the idea of a query string and post data
+  - Create page with four text inputs to enter 4 numbers
+  - Add an Add button
+  - When add button is clicked you have to add all the numbers using server
+  - The server supports a URL '/addtwo?num1=1&num2=2' and returns a json result 
+  - in the client use the fetch interface to add all four numbers together
+
 
 Week of February 20
 ~~~~~~~~~~~~~~~~~~~
