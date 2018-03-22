@@ -37,7 +37,7 @@ Week of March 20
 
 **Tuesday**
 
-* Deploying the server to pythonanywhere
+* Deploying the server to pythonanywhere `Getting Started <https://help.pythonanywhere.com/pages/Flask/>`_
 * Virtual environments
 * Discussion of midterm mashups (not due until after break)
 
