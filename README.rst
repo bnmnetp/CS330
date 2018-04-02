@@ -21,6 +21,13 @@ Because we will be installing a lot of third party packages, and because a big p
 Unit 1 - Javascript Fundamentals
 --------------------------------
 
+Week of April 3
+~~~~~~~~~~~~~~~
+
+* Midterm Mashups!  (see mashup.md)
+* Writing a simple proxy to avoid CORS problems
+* I will be gone Tuesday April 10th
+
 Week of March 27
 ~~~~~~~~~~~~~~~~
 

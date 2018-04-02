@@ -3,9 +3,9 @@
 
 A mashup is a web application that combines 2 or more other web applications using their API's.  This assignment gives you the opportunity to practice with Javascript and XMLHTTPRequest objects by creating your own mashup.
 
-You must use at least 2 API's  You can build your mashup entirely in Javascript, or you may also choose to build it on the server side using Python.
+You must use at least 2 API's  You can build your mashup entirely in Javascript, or you may also choose/need to write a simple server for proxying.
 
-Your mashup is Due by class Thursday April 14.  We will use classtime that day to have an inclass poster session.  Half the class will give demos for about 45 minutes then we will switch and the other half of the class will give their demos.
+Your mashup is Due by class Tuesday April 17.  We will use classtime that day to have an inclass poster session.  Half the class will give demos for about 45 minutes then we will switch and the other half of the class will give their demos.
 
 ## Possible API's
 
