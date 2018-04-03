@@ -1,7 +1,7 @@
 # Midterm mashups
 
 
-A mashup is a web application that combines 2 or more other web applications using their API's.  This assignment gives you the opportunity to practice with Javascript and XMLHTTPRequest objects by creating your own mashup.
+A mashup is a web application that combines 2 or more other web applications using their API's.  This assignment gives you the opportunity to practice with Javascript and the fech or XMLHTTPRequest interface by creating your own mashup.
 
 You must use at least 2 API's  You can build your mashup entirely in Javascript, or you may also choose/need to write a simple server for proxying.
 
