@@ -17,9 +17,27 @@ Because we will be installing a lot of third party packages, and because a big p
 
 * Kent has written up a nice set of instructions for `installing Ubuntu <http://knuth.luther.edu/~leekent/stories/installing-linux-in-our-lab.html>`_  He also has a `video here <http://cs.luther.edu/~leekent/InstallingLinux.mp4>`_
 
+Unit 2 - Back End with Flask
+
+Week of April 17
+~~~~~~~~~~~~~~~~
+
+* Tuesday - In Class Demo Day - Demo your mashups to me and your classmates
+
+* Thursday 
+
+  - Form Processing with Flask
+  - The Python Database Interface
+
 
 Unit 1 - Javascript Fundamentals
 --------------------------------
+
+Week of April 10
+~~~~~~~~~~~~~~~~
+
+* Tuesday - No Class
+* Thursday - Work on Mashups
 
 Week of April 3
 ~~~~~~~~~~~~~~~
