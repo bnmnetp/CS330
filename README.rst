@@ -19,6 +19,8 @@ Because we will be installing a lot of third party packages, and because a big p
 
 Unit 2 - Back End with Flask
 
+`The Flask Mega-tutorial <https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world>`_ is an excellent resource for this part of the course.
+
 Week of April 17
 ~~~~~~~~~~~~~~~~
 
@@ -26,8 +28,8 @@ Week of April 17
 
 * Thursday 
 
-  - Form Processing with Flask
-  - The Python Database Interface
+  - Templates
+  - The Python Database Interface and `records <https://github.com/kennethreitz/records>`_
 
 
 Unit 1 - Javascript Fundamentals
