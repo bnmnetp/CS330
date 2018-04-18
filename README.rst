@@ -28,7 +28,14 @@ Week of April 24
   -   - The Python Database Interface and `records <https://github.com/kennethreitz/records>`_
 
 * Thursday
-  - No Class - Work on xkcd project
+  - No Class - Work on XKCD Password project
+  - XKCD Password Requirements
+    * Generate a password from a word list dictionary composed of four words that satisfy the minimum and maximum length as defined selected by the user.
+    * Implement letter for number substitution
+    * display passwords in a table using templates
+    * Convert hand made form to flask-wtf
+    * implement options for "easy typing" passwords
+    * implement options for adjective, noun, verb, adverb style
 
 Week of April 17
 ~~~~~~~~~~~~~~~~
