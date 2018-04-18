@@ -43,7 +43,7 @@ Week of April 17
 * Tuesday - In Class Demo Day - Demo your mashups to me and your classmates
 
 * Thursday 
-
+  - virtual environments
   - Templates
   - Forms
 
