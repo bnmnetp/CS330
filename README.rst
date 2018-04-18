@@ -21,6 +21,15 @@ Unit 2 - Back End with Flask
 
 `The Flask Mega-tutorial <https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world>`_ is an excellent resource for this part of the course.
 
+Week of April 24
+~~~~~~~~~~~~~~~~
+
+* Tuesday
+  -   - The Python Database Interface and `records <https://github.com/kennethreitz/records>`_
+
+* Thursday
+  - No Class - Work on xkcd project
+
 Week of April 17
 ~~~~~~~~~~~~~~~~
 
@@ -29,7 +38,8 @@ Week of April 17
 * Thursday 
 
   - Templates
-  - The Python Database Interface and `records <https://github.com/kennethreitz/records>`_
+  - Forms
+
 
 
 Unit 1 - Javascript Fundamentals
