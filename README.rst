@@ -21,6 +21,15 @@ Unit 2 - Back End with Flask
 
 `The Flask Mega-tutorial <https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world>`_ is an excellent resource for this part of the course.
 
+Week of May 1
+~~~~~~~~~~~~~
+
+* Tuesday - XKCD assignment due
+  - Database
+
+* Thursday
+  - Cookies
+
 Week of April 24
 ~~~~~~~~~~~~~~~~
 
@@ -30,12 +39,15 @@ Week of April 24
 * Thursday
   - No Class - Work on XKCD Password project
   - XKCD Password Requirements
-    * Generate a password from a word list dictionary composed of four words that satisfy the minimum and maximum length as defined selected by the user.
-    * Implement letter for number substitution
+    * Generate a password from a word list dictionary composed of four words that satisfy the minimum and maximum length as defined selected by the user. (minimum single word length, maximum single word length, maximum overall length)
+    * Implement a checkbox to enable letter for number substitution in the passwords
     * display passwords in a table using templates
-    * Convert hand made form to flask-wtf
-    * implement options for "easy typing" passwords
-    * implement options for adjective, noun, verb, adverb style
+    * Use the bootstrap plugin for flask to improve the look and feel.
+    * Do ONE of the following:
+      * implement options for "easy typing" passwords
+      * implement options for adjective, noun, verb, adverb style
+
+    * This is due at the end of the day Tuesday May 1
 
 Week of April 17
 ~~~~~~~~~~~~~~~~
