@@ -23,8 +23,7 @@ To earn an A on the project you will need to go further.
 
 * You must have at least three controllers (Think python functions with @app.route decorators)
 * You must have at least three views (Think templates)
-* You must use the SqlAlchemy plugin and create a database with 3-4 tables.  These tables should incorporate a one to many relationship in some way, or they may have a many to many relationship.  -- We'll look at this in class a couple days.
-* You should deploy your project on Heroku, appengine, or some other free hosting site so that it is freely accessable and not on the Luther network.  -- We'll look at this in class next week.
+* You must use records or SqlAlchemy and create a database with 3-4 tables.  These tables should incorporate a one to many relationship in some way, or they may have a many to many relationship.    -- We'll look at this in class next week.
 * You should incorporate the WTForms module into your application for processing form data.  -- You can teach yourself this from the tutorial.
 * You should provide a small AJAX API for some aspect of the project that you use in your web pages.  Or you may incorporate some other more advanced Flask Plugin that you OK with me.
 * Your program must use the bootstrap templates, and you must make an attempt to make it look aesthetically nice.
