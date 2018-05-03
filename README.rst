@@ -35,7 +35,7 @@ when a city is chosen continue to display the country information but add the de
 
 * If the user selects a language then show the detailed information for all of the countries on that continent that have that language as their official language.
 
-Proposals due on Thursday for final Project
+Proposals due on Tuesday for final Project
 
 Week of May 1
 ~~~~~~~~~~~~~
@@ -46,6 +46,19 @@ Week of May 1
 * Thursday
   - Cookies
   - Talk about final project
+  
+  - Notes on records
+    
+    >>> import records
+    >>> db2 = records.Database('sqlite:///mydb.db')
+    >>> db2.query('create table person (first_name text, last_name text)')
+    <RecordCollection size=0 pending=True>
+    >>> db2.query("""insert into person values ('Brad', 'Miller')""")
+    <RecordCollection size=0 pending=True>
+    >>> res = db2.query("""select * from person""")
+    >>> res[0]
+    <Record {"first_name": "Brad", "last_name": "Miller"}>
+
 
 Week of April 24
 ~~~~~~~~~~~~~~~~
