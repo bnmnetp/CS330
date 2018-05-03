@@ -24,18 +24,8 @@ Unit 2 - Back End with Flask
 Week of May 8
 ~~~~~~~~~~~~~
 
-World explorer project due on Tuesday
-
-* This project is all to be done with flask and server side python.
-
-* Develop an interface staring with the contents in a dropdown menu (populated from the database) when a user selects a continent then you should display a dropdown with the names of the countries and another with the languages.
-
-* If the user selects a country display all the information about that country and add a dropdown that includes the names of the cities.
-when a city is chosen continue to display the country information but add the details for the selected city as well.
-
-* If the user selects a language then show the detailed information for all of the countries on that continent that have that language as their official language.
-
-Proposals due on Tuesday for final Project
+* finish up in class exercises by Tuesday
+* Bring ideas for final project on Tuesday
 
 Week of May 1
 ~~~~~~~~~~~~~
